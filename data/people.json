@@ -1,0 +1,60 @@
+{
+  "director": {
+    "name": "Sudhir Shrestha, Ph.D.",
+    "title": "Full Professor, Director — Intelligent Systems Laboratory",
+    "department": "Department of Engineering and Computer Science",
+    "university": "Sonoma State University",
+    "email": "sudhir.shrestha@sonoma.edu",
+    "website": "https://sudhirshrestha.com",
+    "bio": "Dr. Shrestha founded the ISL in 2017 and has directed it since. His research spans biomedical sensing, intelligent robotics, and embedded AI systems. He holds a Ph.D. in Electrical and Micro/Nanoscale Systems Engineering from Louisiana Tech University and completed postdoctoral training at Purdue University in Indianapolis.",
+    "photo": null
+  },
+  "current_students": [
+    { "name": "Mahdi Kacem",           "degree": "MSECE", "focus": "Sim-to-real robotics and reinforcement learning" },
+    { "name": "Antonio Cigala",        "degree": "BSEE",  "focus": "Bimanual robot manipulation" },
+    { "name": "Anthony Meyer Slechta", "degree": "BSEE",  "focus": "Vision-language-action robotic systems" },
+    { "name": "Jacob Jaffee",          "degree": "BSEE",  "focus": "Vision-language-action robotic systems" },
+    { "name": "Zella Waltman",         "degree": "BSEE",  "focus": "Vision-language-action robotic systems" },
+    { "name": "Nicholas Frangione",    "degree": "BSCS",  "focus": "Bimanual manipulation and imitation learning" },
+    { "name": "Kai Nunnemaker",        "degree": "BSCS",  "focus": "Bimanual manipulation and imitation learning" },
+    { "name": "Juan Guzman",           "degree": "BSEE",  "focus": "Intelligent systems and embedded AI" },
+    { "name": "Kyler Exley",           "degree": "BSEE",  "focus": "Intelligent systems and embedded AI" }
+  ],
+  "alumni": [
+    { "name": "Sokiyna Naser",      "degree": "M.S.", "year": 2024, "project": "At-Home Breath Profile Data Collection for Type-2 Diabetes" },
+    { "name": "Washaka Mahdi",      "degree": "M.S.", "year": 2024, "project": "OpenAI-Based ChatBot for SSU Engineering Website" },
+    { "name": "Jorge Solorio",      "degree": "M.S.", "year": 2023, "project": "Automatic Navigation of Turtlebot3 Using Vision and LiDAR" },
+    { "name": "Austin Escalante",   "degree": "M.S.", "year": 2023, "project": "Exterior Vehicle Damage Assessment Using Deep Learning" },
+    { "name": "Joel Richin",        "degree": "M.S.", "year": 2023, "project": "State Tracking System for Legacy Semiconductor Equipment" },
+    { "name": "Het Patel",          "degree": "M.S.", "year": 2023, "project": "RTOS-Based Breath Data Collection Device with 4G Logging" },
+    { "name": "Abhijith Nidanakavi","degree": "M.S.", "year": 2023, "project": "TruthSeeker: AI-Driven Detection of Fake and Propaganda Texts" },
+    { "name": "Scott Parmley",      "degree": "M.S.", "year": 2022, "project": "Autonomous Yield Estimator" },
+    { "name": "Priya Patel",        "degree": "M.S.", "year": 2022, "project": "STM32-Based Breath VOC Sensor System Design" },
+    { "name": "Roel Hernandez",     "degree": "M.S.", "year": 2022, "project": "Deep RL Robot Arm Control via Human Demonstrations" },
+    { "name": "Kirk Durand",        "degree": "M.S.", "year": 2021, "project": "Deep RL for 4-DOF Robot Arm Control Simulation" },
+    { "name": "Olivia Piazza",      "degree": "M.S.", "year": 2020, "project": "NLP for Robotic Navigation Through Unknown Environments" },
+    { "name": "Khuram Shehzad",     "degree": "M.S.", "year": 2020, "project": "FMCW Radar for Search and Rescue Applications" },
+    { "name": "Parshva Vora",       "degree": "M.S.", "year": 2019, "project": "Diabetic Retinopathy Detection via Embedded Computer Vision" },
+    { "name": "Matthew Boubin",     "degree": "M.S.", "year": 2019, "project": "SVM for Blood Glucose Detection via Breath VOCs" },
+    { "name": "Yan-Ting Chen",      "degree": "M.S.", "year": 2018, "project": "Smart Sensing System for Indoor Air Quality Monitoring" }
+  ],
+  "notable_undergrads": [
+    { "name": "Jessie Lopez",        "program": "EE",      "year": 2025 },
+    { "name": "Alexis Buenrostro",   "program": "EE",      "year": 2025 },
+    { "name": "Natalie Liang",       "program": "EE",      "year": 2023 },
+    { "name": "Rubi Santiago",       "program": "Nursing",  "year": 2023 },
+    { "name": "Anja Damazyn",        "program": "Nursing",  "year": 2023 },
+    { "name": "Gaven Hayden-Town",   "program": "EE",      "year": 2021 },
+    { "name": "Anthony Arjona",      "program": "EE",      "year": 2021 },
+    { "name": "Alexander Sneed",     "program": "EE",      "year": 2021 },
+    { "name": "Logan Lawrence",      "program": "EE",      "year": 2020 },
+    { "name": "Casey Harold",        "program": "EE",      "year": null }
+  ],
+  "high_school_contributors": [
+    { "name": "Kyle Wu",          "school": "Maria Carrillo High School", "year": 2020 },
+    { "name": "Dipen Timsina",    "school": "Technology High School",     "year": 2020 },
+    { "name": "Vinay Nagappala",  "school": "Montgomery High School",     "year": 2019 },
+    { "name": "Julia Pastis",     "school": "Santa Rosa High School",     "year": 2018 },
+    { "name": "Ziven Posner",     "school": "El Molino High School",      "year": 2018 }
+  ]
+}

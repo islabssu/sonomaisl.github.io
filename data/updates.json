@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2025-04-15",
+    "category": "Patent",
+    "title": "U.S. Patent Issued for Breath-Based Glucose Monitoring Device",
+    "blurb": "US 12,278,013 B2 was issued for a device that collects and analyzes breath VOC data to estimate blood glucose levels in Type-2 diabetes patients."
+  },
+  {
+    "date": "2025-03-08",
+    "category": "Publication",
+    "title": "Two Papers Presented at ICDT 2025",
+    "blurb": "ISL research on deep RL robot arm control and vision-and-language navigation presented at the 3rd International Conference on Disruptive Technologies, Greater Noida, India."
+  },
+  {
+    "date": "2025-02-01",
+    "category": "Publication",
+    "title": "Pilot Clinical Study Published in Biosensors",
+    "blurb": "ISL research on at-home breath data collection for Type-2 diabetes signatures appears in Biosensors, vol. 15, no. 3."
+  },
+  {
+    "date": "2023-01-01",
+    "category": "Award",
+    "title": "ISL Student Team Wins $10K at Sunstone CSU Startup Pitch Competition",
+    "blurb": "Sokiyna Naser and Conor Saal won second place and a $10,000 award for AirGlu, a breath-based glucose sensor device, in the Product Track."
+  }
+]

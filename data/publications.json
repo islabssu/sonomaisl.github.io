@@ -1,0 +1,79 @@
+{
+  "patent": [
+    {
+      "title": "A Device to Collect Breath Data from Type-2 Diabetes Patients in Real-Life Situations",
+      "number": "US 12,278,013 B2",
+      "issued": "April 15, 2025",
+      "authors": ["S. Shrestha"],
+      "abstract": "A device configured to determine a level or concentration of a disease-related analyte in a person's blood from volatile analytes in the person's breath. Includes one or more sensors, a microcontroller, a transmitter, a battery, and a housing with an exhalation port."
+    }
+  ],
+  "journal": [
+    {
+      "title": "At-Home Breath Data Collection for Signatures of Type 2 Diabetes: A Pilot Clinical Study",
+      "journal": "Biosensors",
+      "volume": 15,
+      "number": 3,
+      "year": 2025,
+      "authors": ["S. Naser", "D. A. Roberts", "S. Shrestha"],
+      "doi": "",
+      "abstract": "Investigates VOCs in breath as non-invasive biomarkers for monitoring blood glucose in Type-2 diabetes patients. A pilot clinical study with six patients using a custom sensor device achieved 85% and 82% accuracy with SVM and Random Forest models respectively."
+    },
+    {
+      "title": "Microcontroller Implementation of Support Vector Machine for Detecting Blood Glucose Levels Using Breath VOCs",
+      "journal": "Sensors",
+      "volume": 19,
+      "number": 10,
+      "year": 2019,
+      "authors": ["M. Boubin", "S. Shrestha"],
+      "doi": "",
+      "abstract": null
+    }
+  ],
+  "conference": [
+    {
+      "title": "Deep Reinforcement Learning for a Four Degree of Freedom Robot Arm Accelerated by Human Demonstration",
+      "venue": "3rd International Conference on Disruptive Technologies (ICDT)",
+      "location": "Greater Noida, India",
+      "year": 2025,
+      "pages": "537–542",
+      "authors": ["K. Duran", "R. J. Hernandez", "S. Shrestha"],
+      "abstract": null
+    },
+    {
+      "title": "Pre-contextualized Augmented Language Instructions for Autonomous Vision-and-Language Navigation",
+      "venue": "3rd International Conference on Disruptive Technologies (ICDT)",
+      "location": "Greater Noida, India",
+      "year": 2025,
+      "pages": "386–390",
+      "authors": ["O. Piazza", "S. Shrestha"],
+      "abstract": null
+    },
+    {
+      "title": "Smart Wristband with Integrated Chemical Sensors for Detecting Glucose Levels Using Breath Volatile Organic Compounds",
+      "venue": "Smart Biomedical and Physiological Sensor Technology XV, SPIE",
+      "location": "Baltimore, Maryland",
+      "year": 2019,
+      "authors": ["S. Shrestha", "C. Harold", "M. Boubin", "L. Lawrence"],
+      "abstract": null
+    },
+    {
+      "title": "Source Classification of Indoor Air Pollutants using Principal Component Analysis for Smart Home Monitoring Applications",
+      "venue": "IEEE International Conference on Electro/Information Technology (EIT)",
+      "location": "Rochester, MI",
+      "year": 2018,
+      "pages": "0129–0133",
+      "authors": ["Y.-T. Chen", "S. Shrestha"],
+      "abstract": null
+    },
+    {
+      "title": "System for Monitoring Air Quality and Smog",
+      "venue": "IEEE International Conference on Electro/Information Technology (EIT)",
+      "location": "Rochester, MI",
+      "year": 2018,
+      "pages": "0415–0419",
+      "authors": ["T. McWhorter", "S. Shrestha"],
+      "abstract": null
+    }
+  ]
+}
