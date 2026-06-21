@@ -14,9 +14,7 @@ function projectCard(p) {
   const img = p.image
     ? `<img src="${p.image}" alt="${p.title}" loading="lazy">`
     : '';
-  const students = p.students && p.students.length
-    ? `<div class="project-students">${p.students.join(', ')}</div>`
-    : '';
+  const students = '';
   return `
     <article class="project-card" id="${p.id}" data-area="${p.area}" data-status="${p.status}">
       <div class="project-img">${img}</div>
@@ -116,9 +114,9 @@ async function renderPublications() {
   }
 
   let html = '';
-  if (pubs.patent?.length)     html += `<div class="pub-group"><h2 class="pub-group-title">Patent</h2>${pubs.patent.map(p => pubHTML(p,'patent')).join('')}</div>`;
-  if (pubs.journal?.length)    html += `<div class="pub-group"><h2 class="pub-group-title">Journal Articles</h2>${pubs.journal.map(p => pubHTML(p,'journal')).join('')}</div>`;
-  if (pubs.conference?.length) html += `<div class="pub-group"><h2 class="pub-group-title">Conference Papers</h2>${pubs.conference.map(p => pubHTML(p,'conference')).join('')}</div>`;
+  if (pubs.patent?.length) html += `<div class="pub-group"><h2 class="pub-group-title">Patent</h2>${pubs.patent.map(p => pubHTML(p,'patent')).join('')}</div>`;
+  const jc = [...(pubs.journal||[]).map(p => pubHTML(p,'journal')), ...(pubs.conference||[]).map(p => pubHTML(p,'conference'))];
+  if (jc.length) html += `<div class="pub-group"><h2 class="pub-group-title">Journal and Conference Papers</h2>${jc.join('')}</div>`;
   el.innerHTML = html;
 
   el.querySelectorAll('.pub-toggle').forEach(btn => {
