@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intelligent Systems Laboratory — Sonoma State University</title>
+  <meta name="description" content="ISL develops robotics, machine learning, and sensing systems at the intersection of research and hands-on education at Sonoma State University.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo/isl-logo.jpeg" alt="Intelligent Systems Laboratory">
+    </a>
+    <ul class="nav-links">
+      <li><a href="research.html">Research</a></li>
+      <li><a href="people.html">People</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile">
+    <a href="research.html">Research</a>
+    <a href="people.html">People</a>
+    <a href="publications.html">Publications</a>
+    <a href="join.html">Join</a>
+    <a href="#footer">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <video autoplay muted loop playsinline poster="assets/images/hero-bg.jpeg">
+      <source src="assets/videos/hero-video.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h1>Building Intelligent Systems<br>That Work in the Real World</h1>
+    <p>ISL develops robotics, machine learning, and sensing systems at the intersection of research and hands-on education — training the next generation of engineers and scientists at Sonoma State University.</p>
+    <div class="hero-ctas">
+      <a href="research.html" class="btn btn-primary">Explore Our Research</a>
+      <a href="join.html" class="btn btn-outline">Join the Lab</a>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH AREAS -->
+<section class="section research-areas" id="research">
+  <div class="container">
+    <div class="section-header">
+      <h2>Research Areas</h2>
+    </div>
+    <div class="areas-grid">
+
+      <a class="area-card" href="research.html#robotics">
+        <div class="area-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="11" rx="2"/><path d="M8 9V7a4 4 0 0 1 8 0v2"/><circle cx="9" cy="14" r="1.5" fill="var(--color-primary)" stroke="none"/><circle cx="15" cy="14" r="1.5" fill="var(--color-primary)" stroke="none"/><path d="M9 18h6"/></svg>
+        </div>
+        <h3>Intelligent Robotics and Manipulation</h3>
+        <p>Sim-to-real transfer learning, reinforcement learning for robotic arms, imitation learning, and vision-guided control. Our robots learn from simulation and human demonstration, then operate on physical systems.</p>
+      </a>
+
+      <a class="area-card" href="research.html#biomedical">
+        <div class="area-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2a4 4 0 0 1 4 4v2H8V6a4 4 0 0 1 4-4z"/><path d="M8 8v8a4 4 0 0 0 8 0V8"/><path d="M6 12H4M20 12h-2"/></svg>
+        </div>
+        <h3>Biomedical Sensing and Health AI</h3>
+        <p>Non-invasive blood glucose monitoring using breath volatile organic compounds (VOCs), wearable sensor devices, machine learning models deployed on-device, and clinical data collection pipelines for diabetes management.</p>
+      </a>
+
+      <a class="area-card" href="research.html#embedded">
+        <div class="area-icon">
+          <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
+        </div>
+        <h3>Embedded Systems and Edge AI</h3>
+        <p>Microcontroller-based sensor platforms, RTOS implementations, on-device inference, and low-power systems for real-world health and environmental monitoring.</p>
+      </a>
+
+      <a class="area-card" href="research.html#vision">
+        <div class="area-icon">
+          <svg viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3>Computer Vision and Language-Guided Systems</h3>
+        <p>Deep learning for image classification, diabetic retinopathy detection, autonomous navigation via natural language commands, and vision-language-action integration.</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PROJECTS -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-header">
+      <h2>Featured Projects</h2>
+    </div>
+    <div class="projects-grid" id="featured-projects">
+      <p style="color:var(--color-text-muted)">Loading…</p>
+    </div>
+    <div class="section-cta">
+      <a href="research.html" class="btn btn-teal">View All Research →</a>
+    </div>
+  </div>
+</section>
+
+<!-- PEOPLE -->
+<section class="section people-section" id="people">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Team</h2>
+    </div>
+    <div id="director-card" class="director-card"></div>
+    <h3 class="sub-heading">Current Students</h3>
+    <div class="students-grid" id="current-students"></div>
+    <div class="section-cta" style="margin-top:2rem">
+      <a href="people.html" class="btn btn-teal">Meet the Full Team →</a>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="section impact-section" id="impact">
+  <div class="container">
+    <div class="section-header">
+      <h2>Lab Impact</h2>
+      <p>As of 2026</p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-tile">
+        <span class="stat-number">8+</span>
+        <span class="stat-label">Years of continuous operation (est. 2017)</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-number">100+</span>
+        <span class="stat-label">Students mentored — undergraduate, graduate, and high school</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-number">16</span>
+        <span class="stat-label">M.S. projects and theses supervised</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-number">1</span>
+        <span class="stat-label">Issued U.S. patent (US 12,278,013 B2, April 2025)</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-number">6</span>
+        <span class="stat-label">Peer-reviewed publications</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-number">$800K+</span>
+        <span class="stat-label">In research funding</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-number">$10K</span>
+        <span class="stat-label">Competition award — Sunstone CSU Startup Pitch, 2023</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UPDATES -->
+<section class="section" id="updates" style="background:var(--color-surface)">
+  <div class="container">
+    <div class="section-header">
+      <h2>Updates</h2>
+    </div>
+    <div class="updates-list" id="updates-list">
+      <p style="color:var(--color-text-muted);text-align:center">Loading…</p>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN -->
+<section class="section" id="join" style="background:var(--color-bg)">
+  <div class="container">
+    <div class="section-header">
+      <h2>Get Involved</h2>
+    </div>
+    <div class="join-grid">
+      <div class="join-card">
+        <h3>Prospective Students</h3>
+        <p>ISL welcomes undergraduate and graduate students interested in robotics, AI, sensing, and embedded systems. Positions available through directed study, capstone projects, and thesis supervision.</p>
+        <a href="join.html#students" class="btn btn-teal">Learn More →</a>
+      </div>
+      <div class="join-card">
+        <h3>Industry and Collaborators</h3>
+        <p>We partner with industry and academic collaborators on applied research in intelligent systems, health sensing, and autonomous robotics. If you see alignment, reach out.</p>
+        <a href="join.html#collaborators" class="btn btn-teal">Learn More →</a>
+      </div>
+      <div class="join-card">
+        <h3>Donors and Supporters</h3>
+        <p>ISL operates on a combination of grants, university support, and philanthropic contributions. Equipment donations and targeted gifts directly support student research.</p>
+        <a href="join.html#donors" class="btn btn-teal">Learn More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="assets/logo/isl-logo.jpeg" alt="ISL">
+          <span class="footer-name">Intelligent Systems Laboratory</span>
+        </div>
+        <div class="footer-tagline">Building intelligent systems that work in the real world.</div>
+        <div class="footer-addr">
+          Salazar 2002 / 2008B<br>
+          1801 East Cotati Avenue<br>
+          Rohnert Park, CA 94928<br>
+          <a href="mailto:sudhir.shrestha@sonoma.edu">sudhir.shrestha@sonoma.edu</a>
+        </div>
+        <div class="footer-dept">Department of Engineering and Computer Science, Sonoma State University</div>
+      </div>
+      <nav class="footer-nav">
+        <h4>Site</h4>
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="join.html">Join</a>
+        <a href="mailto:sudhir.shrestha@sonoma.edu">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Intelligent Systems Laboratory, Sonoma State University</span>
+      <span>sonomaisl.ai</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/render.js"></script>
+</body>
+</html>

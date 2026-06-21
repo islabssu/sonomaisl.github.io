@@ -1,0 +1,112 @@
+[
+  {
+    "id": "sim-to-real-rl",
+    "title": "Sim-to-Real Transfer Learning for Robotic Manipulation",
+    "area": "robotics",
+    "status": "active",
+    "years": "2025–present",
+    "featured": true,
+    "description": "A reinforcement learning pipeline for robotic manipulators with a unified control architecture operating in simulation and on physical hardware, incorporating vision-based detection and control, ROS, and NVIDIA GPU acceleration. Findings are integrated directly into the ISL robotics course.",
+    "students": ["Jessie Lopez", "Alexis Buenrostro"],
+    "image": null
+  },
+  {
+    "id": "breath-glucose-voc",
+    "title": "Non-Invasive Blood Glucose Monitoring via Breath VOCs",
+    "area": "biomedical",
+    "status": "active",
+    "years": "2016–present",
+    "featured": true,
+    "description": "Uses volatile organic compound (VOC) signatures in breath, chemical sensors, and a custom handheld device to collect breath data from Type-2 diabetes patients. Machine learning models trained on clinical data are deployed on-device to estimate blood glucose states without finger pricks. Resulted in a U.S. patent and peer-reviewed publication in Biosensors (2025).",
+    "students": ["Sokiyna Naser", "Het Patel", "Priya Patel", "Matthew Boubin", "Casey Harold", "Logan Lawrence"],
+    "image": null
+  },
+  {
+    "id": "robot-nlp-navigation",
+    "title": "Robot Control Using Machine Learning and Natural Language Processing",
+    "area": "vision",
+    "status": "active",
+    "years": "2020–present",
+    "featured": true,
+    "description": "Develops deep-learning-based robot control and an autonomous navigation system driven by verbal commands, combining a vision system, a language interpretation system, and path planning.",
+    "students": ["Olivia Piazza", "Washaka Mahdi"],
+    "image": null
+  },
+  {
+    "id": "deep-rl-robot-arm",
+    "title": "Deep Reinforcement Learning for Robot Arm Control",
+    "area": "robotics",
+    "status": "completed",
+    "years": "2021–2025",
+    "featured": true,
+    "description": "Trained a 4-DOF robotic arm to reach arbitrary target positions using a Dueling Double Deep Q-Network (D3QN), accelerated by human demonstration data. Validated on both the PhantomX Reactor and Dobot Magician arms. Published at ICDT 2025.",
+    "students": ["Kirk Durand", "Roel Hernandez"],
+    "image": null
+  },
+  {
+    "id": "vla-rehab",
+    "title": "Vision-Language-Action Robotic System for Upper-Extremity Rehabilitation",
+    "area": "robotics",
+    "status": "completed",
+    "years": "2025–2026",
+    "featured": false,
+    "description": "A modular VLA robotic system integrating computer vision (YOLOv8), speech recognition (OpenAI Whisper), and neural-network inverse kinematics for cooperative at-home upper-extremity rehabilitation. Developed as a Senior Design project and presented at SSU SD Expo 2026.",
+    "students": ["Anthony Meyer Slechta", "Jacob Jaffee", "Zella Waltman"],
+    "image": "assets/images/projects/vla-rehab-1.jpeg"
+  },
+  {
+    "id": "bimanual-umi",
+    "title": "Training Bimanual Handoff Using UMI",
+    "area": "robotics",
+    "status": "completed",
+    "years": "2025–2026",
+    "featured": false,
+    "description": "Adapted the Stanford UMI demonstration-to-policy framework for dual RX150 robot arms to train a bimanual block handoff task. Built a hardware translation layer converting predicted UMI-style actions into physical RX150 joint movements. Presented at SSU SD Expo 2026.",
+    "students": ["Nicholas Frangione", "Kai Nunnemaker"],
+    "image": "assets/images/projects/bimanual-umi.jpeg"
+  },
+  {
+    "id": "fmcw-radar-rescue",
+    "title": "Radar Remote Detection of Victims Trapped by Debris",
+    "area": "embedded",
+    "status": "completed",
+    "years": "2018–2022",
+    "featured": false,
+    "description": "Developed a low-cost FMCW radar system for locating victims trapped under debris following earthquakes and other disasters. Demonstrated detection of small movements through concrete.",
+    "students": ["Khuram Shehzad", "Anthony Arjona"],
+    "image": null
+  },
+  {
+    "id": "diabetic-retinopathy",
+    "title": "Detecting Diabetic Retinopathy from Retinal Images",
+    "area": "vision",
+    "status": "completed",
+    "years": "2017–2020",
+    "featured": false,
+    "description": "Built an embedded computer vision system for automated detection of diabetic retinopathy from retinal images, targeting low-cost deployment in resource-constrained settings.",
+    "students": ["Parshva Vora"],
+    "image": null
+  },
+  {
+    "id": "gesture-robot-arm",
+    "title": "Gesture-Controlled Robotic Arm",
+    "area": "robotics",
+    "status": "completed",
+    "years": "2017–2019",
+    "featured": false,
+    "description": "Built a sensor-equipped glove that translates hand gestures into robot arm commands, enabling intuitive physical human-robot interaction.",
+    "students": [],
+    "image": null
+  },
+  {
+    "id": "voc-air-quality",
+    "title": "Monitoring Air Pollutants Using VOC Sensors",
+    "area": "embedded",
+    "status": "completed",
+    "years": "2016–2018",
+    "featured": false,
+    "description": "Developed systems to detect target VOCs for indoor air quality monitoring and analyzed sensor data using principal component analysis for source classification.",
+    "students": ["Yan-Ting Chen"],
+    "image": null
+  }
+]
