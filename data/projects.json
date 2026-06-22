@@ -1,7 +1,7 @@
 [
   {
     "id": "bimanual-umi",
-    "title": "Training Bimanual Handoff Using UMI",
+    "title": "Imitation Learning for Bimanual Robot Coordination",
     "area": "robotics",
     "status": "active",
     "years": "2025–present",
