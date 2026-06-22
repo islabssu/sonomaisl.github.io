@@ -203,9 +203,13 @@ async function renderPeople() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  renderFeatured().catch(console.error);
-  renderAll().catch(console.error);
-  renderUpdates().catch(console.error);
-  renderPublications().catch(console.error);
-  renderPeople().catch(console.error);
+  Promise.allSettled([
+    renderFeatured(),
+    renderAll(),
+    renderUpdates(),
+    renderPublications(),
+    renderPeople()
+  ]).then(() => {
+    if (typeof initVideoAutoplay === 'function') initVideoAutoplay();
+  });
 });
