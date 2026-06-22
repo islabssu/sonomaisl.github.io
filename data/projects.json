@@ -1,14 +1,15 @@
 [
   {
-    "id": "sim-to-real-rl",
-    "title": "Sim-to-Real Transfer Learning for Robotic Manipulation",
+    "id": "bimanual-umi",
+    "title": "Training Bimanual Handoff Using UMI",
     "area": "robotics",
     "status": "active",
     "years": "2025–present",
-    "featured": true,
-    "description": "A reinforcement learning pipeline for robotic manipulators with a unified control architecture operating in simulation and on physical hardware, incorporating vision-based detection and control, ROS, and NVIDIA GPU acceleration. Findings are integrated directly into the ISL robotics course.",
-    "students": ["Jessie Lopez", "Alexis Buenrostro"],
-    "image": null
+    "featured": false,
+    "description": "Adapted the Stanford UMI demonstration-to-policy framework for dual RX150 robot arms to train a bimanual block handoff task. Built a hardware translation layer converting predicted UMI-style actions into physical RX150 joint movements. Presented at SSU SD Expo 2026.",
+    "students": ["Nicholas Frangione", "Kai Nunnemaker"],
+    "image": "assets/images/projects/bimanual-umi.jpeg",
+    "video": "assets/videos/bimanual-umi-training.mp4"
   },
   {
     "id": "breath-glucose-voc",
@@ -20,6 +21,28 @@
     "description": "Uses volatile organic compound (VOC) signatures in breath, chemical sensors, and a custom handheld device to collect breath data from Type-2 diabetes patients. Machine learning models trained on clinical data are deployed on-device to estimate blood glucose states without finger pricks. Resulted in a U.S. patent and peer-reviewed publication in Biosensors (2025).",
     "students": ["Sokiyna Naser", "Het Patel", "Priya Patel", "Matthew Boubin", "Casey Harold", "Logan Lawrence"],
     "image": null
+  },
+  {
+    "id": "sim-to-real-rl",
+    "title": "Sim-to-Real Transfer Learning for Robotic Manipulation",
+    "area": "robotics",
+    "status": "active",
+    "years": "2025–present",
+    "featured": true,
+    "description": "A reinforcement learning pipeline for robotic manipulators with a unified control architecture operating in simulation and on physical hardware, incorporating vision-based detection and control, ROS, and NVIDIA GPU acceleration. Findings are integrated directly into the ISL robotics course.",
+    "students": ["Jessie Lopez", "Alexis Buenrostro"],
+    "image": null
+  },
+  {
+    "id": "vla-rehab",
+    "title": "Vision-Language-Action Robotic System for Upper-Extremity Rehabilitation",
+    "area": "robotics",
+    "status": "completed",
+    "years": "2025–2026",
+    "featured": false,
+    "description": "A modular VLA robotic system integrating computer vision (YOLOv8), speech recognition (OpenAI Whisper), and neural-network inverse kinematics for cooperative at-home upper-extremity rehabilitation. Developed as a Senior Design project and presented at SSU SD Expo 2026.",
+    "students": ["Anthony Meyer Slechta", "Jacob Jaffee", "Zella Waltman"],
+    "image": "assets/images/projects/vla-rehab-1.jpeg"
   },
   {
     "id": "robot-nlp-navigation",
@@ -42,29 +65,6 @@
     "description": "Trained a 4-DOF robotic arm to reach arbitrary target positions using a Dueling Double Deep Q-Network (D3QN), accelerated by human demonstration data. Validated on both the PhantomX Reactor and Dobot Magician arms. Published at ICDT 2025.",
     "students": ["Kirk Durand", "Roel Hernandez"],
     "image": null
-  },
-  {
-    "id": "vla-rehab",
-    "title": "Vision-Language-Action Robotic System for Upper-Extremity Rehabilitation",
-    "area": "robotics",
-    "status": "completed",
-    "years": "2025–2026",
-    "featured": false,
-    "description": "A modular VLA robotic system integrating computer vision (YOLOv8), speech recognition (OpenAI Whisper), and neural-network inverse kinematics for cooperative at-home upper-extremity rehabilitation. Developed as a Senior Design project and presented at SSU SD Expo 2026.",
-    "students": ["Anthony Meyer Slechta", "Jacob Jaffee", "Zella Waltman"],
-    "image": "assets/images/projects/vla-rehab-1.jpeg"
-  },
-  {
-    "id": "bimanual-umi",
-    "title": "Training Bimanual Handoff Using UMI",
-    "area": "robotics",
-    "status": "active",
-    "years": "2025–present",
-    "featured": false,
-    "description": "Adapted the Stanford UMI demonstration-to-policy framework for dual RX150 robot arms to train a bimanual block handoff task. Built a hardware translation layer converting predicted UMI-style actions into physical RX150 joint movements. Presented at SSU SD Expo 2026.",
-    "students": ["Nicholas Frangione", "Kai Nunnemaker"],
-    "image": "assets/images/projects/bimanual-umi.jpeg",
-    "video": "assets/videos/bimanual-umi-training.mp4"
   },
   {
     "id": "fmcw-radar-rescue",
