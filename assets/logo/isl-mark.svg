@@ -1,7 +1,7 @@
 <svg width="200" height="200" viewBox="0 0 200 200" role="img" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .isl-letter { font-family: 'Inter', system-ui, sans-serif; font-weight: 700; font-size: 72px; fill: #1B3A5C; }
+    .isl-letter { font-family: 'Inter', system-ui, sans-serif; font-weight: 700; font-size: 96px; fill: #1B3A5C; }
   </style>
-  <text class="isl-letter" x="100" y="122" text-anchor="middle">ISL</text>
-  <rect x="30" y="136" width="140" height="2" rx="1" fill="#C8960C" opacity="0.7"/>
+  <text class="isl-letter" x="100" y="130" text-anchor="middle">ISL</text>
+  <rect x="30" y="148" width="140" height="2.5" rx="1" fill="#C8960C"/>
 </svg>
