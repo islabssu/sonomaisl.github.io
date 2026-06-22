@@ -11,7 +11,7 @@
   },
   "current_students": [
     { "name": "Mahdi Kacem",           "degree": "MSECE", "focus": "Intelligent systems and embedded AI" },
-    { "name": "Antonio Cigala",        "degree": "BSEE",  "focus": "Bimanual robot manipulation" },
+    { "name": "Antonio Cigala",        "degree": "BSEE",  "focus": "Imitation learning for bimanual robot coordination" },
     { "name": "Anthony Meyer Slechta", "degree": "BSEE",  "focus": "Vision-language-action robotic systems" },
     { "name": "Jacob Jaffee",          "degree": "BSEE",  "focus": "Vision-language-action robotic systems" },
     { "name": "Zella Waltman",         "degree": "BSEE",  "focus": "Vision-language-action robotic systems" },
