@@ -32,7 +32,8 @@
     "featured": true,
     "description": "A reinforcement learning pipeline for robotic manipulators with a unified control architecture operating in simulation and on physical hardware, incorporating vision-based detection and control, ROS, and NVIDIA GPU acceleration. Findings are integrated directly into the ISL robotics course.",
     "students": ["Jessie Lopez", "Alexis Buenrostro"],
-    "image": null
+    "image": null,
+    "video": "assets/videos/sim-to-real-demo.mp4"
   },
   {
     "id": "vla-rehab",
