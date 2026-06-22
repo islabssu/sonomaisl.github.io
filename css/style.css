@@ -383,9 +383,17 @@ p  { line-height: 1.7; }
 /* 11. Impact */
 /* Teaching */
 .teaching-card {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+.teaching-image img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  background: var(--color-bg);
 }
 .teaching-course-tag {
   display: inline-block;
@@ -643,6 +651,7 @@ p  { line-height: 1.7; }
   .hero-ctas { flex-direction: column; }
   .hero-ctas .btn { text-align: center; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .teaching-card { grid-template-columns: 1fr; }
   .students-grid { grid-template-columns: repeat(2, 1fr); }
   .update-item { flex-direction: column; gap: 0.4rem; }
   .update-date { min-width: unset; }
