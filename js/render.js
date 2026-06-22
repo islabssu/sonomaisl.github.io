@@ -11,9 +11,11 @@ function badge(status) {
 }
 
 function projectCard(p) {
-  const img = p.image
-    ? `<img src="${p.image}" alt="${p.title}" loading="lazy">`
-    : '';
+  const img = p.video
+    ? `<video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover"><source src="${p.video}" type="video/mp4"></video>`
+    : p.image
+      ? `<img src="${p.image}" alt="${p.title}" loading="lazy">`
+      : '';
   const students = '';
   return `
     <article class="project-card" id="${p.id}" data-area="${p.area}" data-status="${p.status}">
