@@ -42,7 +42,8 @@
     "featured": false,
     "description": "A modular VLA robotic system integrating computer vision (YOLOv8), speech recognition (OpenAI Whisper), and neural-network inverse kinematics for cooperative at-home upper-extremity rehabilitation. Developed as a Senior Design project and presented at SSU SD Expo 2026.",
     "students": ["Anthony Meyer Slechta", "Jacob Jaffee", "Zella Waltman"],
-    "image": "assets/images/projects/vla-rehab-1.jpeg"
+    "image": "assets/images/projects/vla-rehab-1.jpeg",
+    "video": "assets/videos/vla-rehab-block-stacking.mp4"
   },
   {
     "id": "robot-nlp-navigation",
