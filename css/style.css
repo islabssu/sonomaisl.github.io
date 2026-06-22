@@ -4,16 +4,17 @@
 
 /* 1. Custom Properties */
 :root {
-  --color-primary:      #0A6B6B;
-  --color-primary-dark: #085454;
-  --color-primary-light:#0d8888;
-  --color-accent:       #D4820A;
-  --color-accent-dark:  #b56d08;
-  --color-bg:           #F6F8F7;
-  --color-text:         #1a1a1a;
-  --color-text-muted:   #5a6b65;
-  --color-surface:      #ffffff;
-  --color-border:       #d5dedd;
+  --color-primary:      #1B3A5C;
+  --color-primary-dark: #142c47;
+  --color-primary-light:#4A7FA5;
+  --color-accent:       #C8960C;
+  --color-accent-dark:  #a87a09;
+  --color-accent-light: #4A7FA5;
+  --color-bg:           #F7F7F5;
+  --color-text:         #1A1A2E;
+  --color-text-muted:   #6B7280;
+  --color-surface:      #FFFFFF;
+  --color-border:       #d5d9e0;
 
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', 'Courier New', monospace;
