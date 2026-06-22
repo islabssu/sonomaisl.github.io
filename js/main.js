@@ -1,4 +1,31 @@
+function initVideoAutoplay() {
+  const videos = document.querySelectorAll('video');
+  if (!videos.length) return;
+
+  videos.forEach(v => {
+    v.muted = true;
+    v.playsInline = true;
+  });
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const v = entry.target;
+        if (entry.isIntersecting) {
+          v.play().catch(() => {});
+        } else {
+          v.pause();
+        }
+      });
+    }, { threshold: 0.25 });
+    videos.forEach(v => observer.observe(v));
+  } else {
+    videos.forEach(v => v.play().catch(() => {}));
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  initVideoAutoplay();
   const nav       = document.querySelector('.nav');
   const hamburger = document.querySelector('.nav-hamburger');
   const mobile    = document.querySelector('.nav-mobile');
