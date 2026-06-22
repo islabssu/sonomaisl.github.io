@@ -20,7 +20,8 @@
     "featured": true,
     "description": "Uses volatile organic compound (VOC) signatures in breath, chemical sensors, and a custom handheld device to collect breath data from Type-2 diabetes patients. Machine learning models trained on clinical data are deployed on-device to estimate blood glucose states without finger pricks. Resulted in a U.S. patent and peer-reviewed publication in Biosensors (2025).",
     "students": ["Sokiyna Naser", "Het Patel", "Priya Patel", "Matthew Boubin", "Casey Harold", "Logan Lawrence"],
-    "image": null
+    "image": null,
+    "video": "assets/videos/non-invasive-bg-demo.mp4"
   },
   {
     "id": "sim-to-real-rl",
