@@ -151,7 +151,8 @@ async function renderPeople() {
 
   const stuEl = document.getElementById('current-students');
   if (stuEl && data.current_students) {
-    stuEl.innerHTML = data.current_students.map(s => {
+    const limit = stuEl.dataset.limit ? parseInt(stuEl.dataset.limit) : Infinity;
+    stuEl.innerHTML = data.current_students.slice(0, limit).map(s => {
       const initials = s.name.split(' ').map(n => n[0]).join('').slice(0,2).toUpperCase();
       return `
         <div class="student-card">
