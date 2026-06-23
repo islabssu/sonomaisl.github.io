@@ -330,7 +330,9 @@ p  { line-height: 1.7; }
 .director-info .title { color: var(--color-text-muted); font-size: 0.875rem; margin-bottom: 0.75rem; }
 .director-info p   { font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.85rem; max-width: 680px; }
 .director-info a   { color: var(--color-accent); font-weight: 600; font-size: 0.875rem; }
-.director-info a + a { margin-left: 1.25rem; }
+.director-links { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.25rem; }
+.director-sep { color: var(--color-border); font-size: 1.1rem; }
+.director-contact { color: var(--color-accent); font-weight: 600; font-size: 0.875rem; }
 .students-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
