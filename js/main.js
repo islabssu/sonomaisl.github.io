@@ -11,10 +11,19 @@ function initVideoAutoplay() {
     v.play().catch(() => {});
   });
 
+  // Hero video: play eagerly on load without waiting for scroll/touch
+  const heroVideo = document.querySelector('video[data-hero]');
+  if (heroVideo) {
+    const playHero = () => heroVideo.play().catch(() => {});
+    playHero();
+    heroVideo.addEventListener('canplay', playHero, { once: true });
+  }
+
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         const v = entry.target;
+        if (v.dataset.hero) return; // hero plays independently
         if (entry.isIntersecting) {
           v.play().catch(() => {});
         } else {
