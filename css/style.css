@@ -642,7 +642,7 @@ p  { line-height: 1.7; }
 @media (max-width: 768px) {
   .nav-links    { display: none; }
   .nav-hamburger { display: block; }
-  .nav-logo img { height: 52px; max-width: 220px; }
+  .nav-logo img { height: 64px; max-width: 260px; }
   .areas-grid   { grid-template-columns: 1fr; }
   .director-card { flex-direction: column; }
   .alumni-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
