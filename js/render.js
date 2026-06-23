@@ -144,8 +144,8 @@ async function renderPeople() {
         <h3>${d.name}</h3>
         <div class="title">${d.title}</div>
         <p>${d.bio}</p>
-        <a href="${d.website}" target="_blank" rel="noopener">Personal website →</a>
-        <span>${d.email}</span>
+        <a href="${d.website}" target="_blank" rel="noopener">Visit personal website</a>
+        <span>Collaborations &amp; inquiries: ${d.email}</span>
       </div>`;
   }
 
