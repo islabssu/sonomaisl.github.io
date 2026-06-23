@@ -1,21 +1,22 @@
-<svg width="680" height="360" viewBox="0 0 680 360" role="img" xmlns="http://www.w3.org/2000/svg">
-  <title>ISL — Intelligent Systems Lab</title>
-  <desc>Wordmark logo with the letters ISL in deep slate blue with full lab name beneath</desc>
+<svg width="720" height="120" viewBox="0 0 720 120" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>ISL — Intelligent Systems Lab horizontal logo</title>
 
   <style>
-    .isl-letter { font-family: 'Inter', system-ui, sans-serif; font-weight: 700; font-size: 96px; fill: #1B3A5C; }
-    .isl-sub { font-family: 'Inter', system-ui, sans-serif; font-weight: 400; font-size: 13px; fill: #1B3A5C; letter-spacing: 3.5px; }
-    .isl-tagline { font-family: 'Inter', system-ui, sans-serif; font-weight: 400; font-size: 11px; fill: #6B7280; letter-spacing: 1px; }
+    .isl-letter { font-family: 'Inter', system-ui, sans-serif; font-weight: 700; font-size: 52px; fill: #1B3A5C; }
+    .isl-name { font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 15px; fill: #1B3A5C; letter-spacing: 2px; }
+    .isl-sub { font-family: 'Inter', system-ui, sans-serif; font-weight: 400; font-size: 11px; fill: #6B7280; letter-spacing: 1.5px; }
   </style>
 
-  <text class="isl-letter" x="340" y="170" text-anchor="middle">ISL</text>
+  <text class="isl-letter" x="81" y="58" text-anchor="middle">ISL</text>
+  <rect x="36" y="70" width="90" height="2.5" rx="1" fill="#C8960C"/>
 
-  <rect x="220" y="188" width="240" height="1.5" rx="1" fill="#C8960C" opacity="0.6"/>
+  <rect x="46" y="82" width="10" height="10" rx="2" fill="#1B3A5C" opacity="0.15"/>
+  <rect x="62" y="82" width="10" height="10" rx="2" fill="#C8960C" opacity="0.5"/>
+  <rect x="78" y="82" width="10" height="10" rx="2" fill="#4A7FA5" opacity="0.3"/>
 
-  <text class="isl-sub" x="340" y="224" text-anchor="middle">INTELLIGENT SYSTEMS LAB</text>
-  <text class="isl-tagline" x="340" y="244" text-anchor="middle">SONOMA STATE UNIVERSITY</text>
+  <rect x="158" y="18" width="1.5" height="84" rx="1" fill="#C8960C" opacity="0.5"/>
 
-  <rect x="316" y="264" width="12" height="12" rx="2" fill="#1B3A5C" opacity="0.15"/>
-  <rect x="334" y="264" width="12" height="12" rx="2" fill="#C8960C" opacity="0.5"/>
-  <rect x="352" y="264" width="12" height="12" rx="2" fill="#4A7FA5" opacity="0.3"/>
+  <text class="isl-name" x="178" y="52">INTELLIGENT SYSTEMS LAB</text>
+  <text class="isl-sub" x="178" y="72">SONOMA STATE UNIVERSITY</text>
+
 </svg>
