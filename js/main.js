@@ -4,7 +4,11 @@ function initVideoAutoplay() {
 
   videos.forEach(v => {
     v.muted = true;
-    v.playsInline = true;
+    v.setAttribute('muted', '');
+    v.setAttribute('playsinline', '');
+    v.setAttribute('webkit-playsinline', '');
+    v.load();
+    v.play().catch(() => {});
   });
 
   if ('IntersectionObserver' in window) {
@@ -17,11 +21,17 @@ function initVideoAutoplay() {
           v.pause();
         }
       });
-    }, { threshold: 0.25 });
+    }, { threshold: 0.1 });
     videos.forEach(v => observer.observe(v));
-  } else {
-    videos.forEach(v => v.play().catch(() => {}));
   }
+
+  const unlock = () => {
+    document.querySelectorAll('video').forEach(v => v.play().catch(() => {}));
+    document.removeEventListener('touchstart', unlock);
+    document.removeEventListener('touchend', unlock);
+  };
+  document.addEventListener('touchstart', unlock, { passive: true });
+  document.addEventListener('touchend', unlock, { passive: true });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
