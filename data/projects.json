@@ -124,6 +124,6 @@
     "page": "research/voc-air-quality.html",
     "description": "Developed systems to detect target VOCs for indoor air quality monitoring and analyzed sensor data using principal component analysis for source classification.",
     "students": ["Yan-Ting Chen"],
-    "image": null
+    "image": "assets/images/projects/voc-air-quality.jpg"
   }
 ]
