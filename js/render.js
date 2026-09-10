@@ -15,7 +15,7 @@ function projectCard(p) {
   const img = p.video
     ? `<video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;object-position:${pos}"><source src="${p.video}" type="video/mp4"></video>`
     : p.image
-      ? `<img src="${p.image}" alt="${p.title}" loading="lazy">`
+      ? `<img src="${p.image}" alt="${p.title}" loading="lazy" style="object-position:${p.imagePosition || 'center'}">`
       : '';
   const students = '';
   return `
