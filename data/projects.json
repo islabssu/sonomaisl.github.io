@@ -97,8 +97,8 @@
     "featured": false,
     "page": "research/diabetic-retinopathy.html",
     "description": "Built an embedded computer vision system for automated detection of diabetic retinopathy from retinal images, targeting low-cost deployment in resource-constrained settings.",
-    "students": ["Parshva Vora"],
-    "image": null
+    "students": ["Parshva Vora", "Logan Lawrence", "Cristin Faria", "Diego Espinosa", "C. Manimala"],
+    "image": "assets/images/projects/diabetic-retinopathy.jpg"
   },
   {
     "id": "gesture-robot-arm",
