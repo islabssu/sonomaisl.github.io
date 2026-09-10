@@ -32,6 +32,7 @@
   ],
   "conference": [
     {
+      "id": "icdt2025-durand-hernandez",
       "title": "Deep Reinforcement Learning for a Four Degree of Freedom Robot Arm Accelerated by Human Demonstration",
       "venue": "3rd International Conference on Disruptive Technologies (ICDT)",
       "location": "Greater Noida, India",
@@ -41,6 +42,7 @@
       "abstract": null
     },
     {
+      "id": "icdt2025-piazza",
       "title": "Pre-contextualized Augmented Language Instructions for Autonomous Vision-and-Language Navigation",
       "venue": "3rd International Conference on Disruptive Technologies (ICDT)",
       "location": "Greater Noida, India",
