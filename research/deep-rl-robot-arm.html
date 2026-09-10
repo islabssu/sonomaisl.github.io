@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Imitation Learning for Bimanual Robot Coordination | Intelligent Systems Lab</title>
-  <meta name="description" content="Adapting the Stanford UMI demonstration-to-policy framework for dual RX150 robot arms to train a bimanual block handoff policy.">
+  <title>Deep Reinforcement Learning for Robot Arm Control | Intelligent Systems Lab</title>
+  <meta name="description" content="Training a 4-DOF robotic arm to reach arbitrary target positions using deep reinforcement learning accelerated by human demonstration.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -13,8 +13,6 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo/apple-touch-icon.png">
   <link rel="stylesheet" href="../css/style.css">
   <style>
-    .project-detail-media { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); margin-bottom: 2rem; }
-    .project-detail-media video, .project-detail-media img { width: 100%; display: block; }
     .back-link { display: inline-block; margin-bottom: 1.5rem; font-size: 0.85rem; color: var(--color-text-muted); }
     .back-link:hover { color: var(--color-primary); }
     .resource-list { list-style: disc; padding-left: 1.5rem; }
@@ -53,10 +51,10 @@
 
 <div class="page-hero">
   <div class="container">
-    <span class="badge badge-active">Active</span>
-    <span class="project-years" style="color:rgba(255,255,255,0.78); margin-left:0.6rem;">2025–present</span>
-    <h1>Imitation Learning for Bimanual Robot Coordination</h1>
-    <p>Adapting the Stanford UMI demonstration-to-policy framework for dual RX150 robot arms.</p>
+    <span class="badge badge-completed">Completed</span>
+    <span class="project-years" style="color:rgba(255,255,255,0.78); margin-left:0.6rem;">2021–2025</span>
+    <h1>Deep Reinforcement Learning for Robot Arm Control</h1>
+    <p>Training a 4-DOF robotic arm to reach arbitrary target positions, accelerated by human demonstration data.</p>
   </div>
 </div>
 
@@ -64,15 +62,9 @@
   <div class="container" style="max-width:800px">
     <a class="back-link" href="../research.html">← Back to Research</a>
 
-    <div class="project-detail-media">
-      <video autoplay muted loop playsinline>
-        <source src="../assets/videos/bimanual-umi-training.mp4" type="video/mp4">
-      </video>
-    </div>
+    <p>Trained a 4-DOF robotic arm to reach arbitrary target positions using a Dueling Double Deep Q-Network (D3QN), accelerated by human demonstration data. Validated on both the PhantomX Reactor and Dobot Magician arms.</p>
 
-    <p>This project adapts the Stanford UMI (Universal Manipulation Interface) demonstration-to-policy framework to dual Interbotix RX150 robot arms. Two custom UMI-style handheld gripper sets were built to collect human demonstration data, which was used to train a diffusion policy for a bimanual pick-and-place task — handing off a block between the two arms. A hardware translation layer converts the model's predicted UMI-style actions into physical RX150 joint movements.</p>
-
-    <p style="margin-top:1rem">Implementation and further model training are currently in progress. The RX150 arms will be replaced with new WidowX arms going forward; continuing work includes collecting additional demonstration data on the new hardware, retraining the policy, and validating it on the physical WidowX system.</p>
+    <p style="margin-top:1rem">The work began with Kirk Durand's MS thesis (May 2021), which established the simulation-accelerated D3QN approach. Roel Hernandez's MS project (May 2022) then built a hardware implementation, translating the trained policy onto physical arms and testing transfer between two different 4-DOF platforms. The combined findings were published at ICDT 2025.</p>
   </div>
 </section>
 
@@ -86,23 +78,15 @@
         <div class="pub-authors">K. Durand, R. J. Hernandez, S. Shrestha</div>
         <a href="../publications.html#icdt2025-durand-hernandez" class="project-link" style="margin-top:0.5rem">View on Publications page →</a>
       </div>
-      <div class="pub-item">
-        <div class="pub-title">Pre-contextualized Augmented Language Instructions for Autonomous Vision-and-Language Navigation</div>
-        <div class="pub-meta">3rd International Conference on Disruptive Technologies (ICDT), Greater Noida, India, 2025, pp.&nbsp;386–390</div>
-        <div class="pub-authors">O. Piazza, S. Shrestha</div>
-        <a href="../publications.html#icdt2025-piazza" class="project-link" style="margin-top:0.5rem">View on Publications page →</a>
-      </div>
     </div>
 
     <h2 style="margin:2.5rem 0 1.5rem">Additional Resources</h2>
-    <p style="color:var(--color-text-muted); margin-bottom:1rem; font-size:0.9rem">Unpublished student reports and materials related to this line of work.</p>
+    <p style="color:var(--color-text-muted); margin-bottom:1rem; font-size:0.9rem">Underlying student theses and project materials.</p>
     <ul class="resource-list">
-      <li><a href="../assets/files/bimanual-umi-group-presentation.pdf" target="_blank" rel="noopener">Training Bimanual Handoff using UMI — Project Presentation</a> <span class="resource-note">(Frangione &amp; Nunnemaker)</span></li>
-      <li><a href="../assets/files/roel-hernandez-ms-project-report.pdf" target="_blank" rel="noopener">Roel Hernandez — MS Project Report</a></li>
+      <li><a href="https://scholarworks.calstate.edu/downloads/g445ck48f" target="_blank" rel="noopener">Kirk Durand — MS Thesis, "Deep Reinforcement Learning for a Four Degree of Freedom Robot Arm Control Simulation Accelerated by Human Demonstrations" (2021)</a> <span class="resource-note">(CSU ScholarWorks)</span></li>
+      <li><a href="../assets/files/roel-hernandez-ms-project-report.pdf" target="_blank" rel="noopener">Roel Hernandez — MS Project Report, "Hardware Implementation of Four Degree of Freedom Deep Reinforcement Learning Arm Control Model Trained Through Human Demonstrations" (2022)</a></li>
       <li><a href="../assets/files/roel-hernandez-ms-project-presentation.pdf" target="_blank" rel="noopener">Roel Hernandez — MS Project Presentation</a></li>
       <li><a href="../assets/files/roel-hernandez-research-poster.pdf" target="_blank" rel="noopener">Roel Hernandez — Research Poster</a></li>
-      <li><a href="../assets/files/kirk-durand-ms-thesis.pdf" target="_blank" rel="noopener">Kirk Durand — MS Thesis</a></li>
-      <li><a href="../assets/files/olivia-piazza-ms-report.pdf" target="_blank" rel="noopener">Olivia Piazza — MS Report</a></li>
     </ul>
   </div>
 </section>
