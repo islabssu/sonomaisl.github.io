@@ -65,12 +65,22 @@
     <a class="back-link" href="../research.html">← Back to Research</a>
 
     <div class="project-detail-media">
-      <img src="../assets/images/projects/robot-nlp-navigation.jpg" alt="First-person view from the navigation agent's simulated environment, from Olivia Piazza's MS thesis">
+      <video autoplay muted loop playsinline>
+        <source src="../assets/videos/robot-nlp-navigation-demo.mp4" type="video/mp4">
+      </video>
     </div>
+    <p style="text-align:center; font-size:0.85rem; color:var(--color-text-muted); margin:-1rem 0 1.5rem">A TurtleBot3 locating and approaching a detected object in simulation, with the YOLO detection window and live distance estimates alongside.</p>
 
-    <p>Developed deep-learning-based robot control and an autonomous navigation system driven by verbal commands, combining a vision system, a language interpretation system, and path planning.</p>
+    <p>Developed deep-learning-based robot control and autonomous navigation driven by verbal commands, combining a vision system, a language interpretation system, and path planning.</p>
 
     <p style="margin-top:1rem">This line of work began as Olivia Piazza's MS thesis, <em>Natural Language Processing for Robotic Navigation Through Unknown Environments</em> (December 2020), which framed instruction-following navigation as a trajectory optimization problem so a robot could explore unfamiliar environments from natural-language directions. The approach was later extended and presented as "Pre-contextualized Augmented Language Instructions for Autonomous Vision-and-Language Navigation" at ICDT 2025.</p>
+
+    <div class="project-detail-media" style="margin-top:1.5rem">
+      <img src="../assets/images/projects/robot-nlp-navigation.jpg" alt="First-person view from the navigation agent's simulated environment, from Olivia Piazza's MS thesis">
+    </div>
+    <p style="text-align:center; font-size:0.85rem; color:var(--color-text-muted); margin:-1rem 0 1.5rem">One frame of the environment the language-guided agent navigates, from Olivia Piazza's MS thesis.</p>
+
+    <p>A parallel strand took the same navigation problem from the perception side. Jorge Solorio's MS project, <em>Automatic Navigation of TurtleBot3 Using Vision and LiDAR</em> (2023), paired a YOLO object detector with LiDAR range data so the robot could identify a target, estimate its distance, and drive to it autonomously. That is the work shown in the video above.</p>
   </div>
 </section>
 
@@ -91,6 +101,7 @@
     <ul class="resource-list">
       <li><a href="../assets/files/olivia-piazza-ms-report.pdf" target="_blank" rel="noopener">Olivia Piazza's MS report, "Natural Language Processing for Robotic Navigation Through Unknown Environments" (2020)</a></li>
       <li><a href="https://orsp.sonoma.edu/training-and-events/gallery/natural-language-processing-robotic-navigation" target="_blank" rel="noopener">Natural Language Processing for Robotic Navigation (SSU Office of Research &amp; Sponsored Programs)</a></li>
+      <li>Jorge Solorio, "Automatic Navigation of TurtleBot3 Using Vision and LiDAR," MS Project, 2023</li>
     </ul>
   </div>
 </section>
