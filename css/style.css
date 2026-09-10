@@ -558,6 +558,7 @@ p  { line-height: 1.7; }
 .page-hero { background: var(--color-primary); color: #fff; padding: 5rem 0 4rem; }
 .page-hero h1 { margin-bottom: 0.65rem; }
 .page-hero p  { color: rgba(255,255,255,0.78); max-width: 600px; }
+.page-hero .badge-active, .page-hero .badge-completed { background: rgba(255,255,255,0.18); color: #fff; }
 
 /* Research page filters */
 .filter-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2.5rem; }
