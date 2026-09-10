@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imitation Learning for Bimanual Robot Coordination | Intelligent Systems Lab</title>
+  <meta name="description" content="Adapting the Stanford UMI demonstration-to-policy framework for dual RX150 robot arms to train a bimanual block handoff policy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/logo/favicon-32.png">
+  <link rel="icon" type="image/svg+xml" href="../assets/logo/isl-mark.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo/apple-touch-icon.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .project-detail-media { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); margin-bottom: 2rem; }
+    .project-detail-media video, .project-detail-media img { width: 100%; display: block; }
+    .back-link { display: inline-block; margin-bottom: 1.5rem; font-size: 0.85rem; color: var(--color-text-muted); }
+    .back-link:hover { color: var(--color-primary); }
+    .resource-list { list-style: disc; padding-left: 1.5rem; }
+    .resource-list li { margin-bottom: 0.6rem; }
+    .resource-list a { color: var(--color-primary); font-weight: 500; }
+    .resource-list a:hover { text-decoration: underline; }
+    .resource-note { font-size: 0.8rem; color: var(--color-text-muted); margin-left: 0.4rem; }
+    .page-hero .badge-active { background: rgba(255,255,255,0.18); color: #fff; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/logo/isl-logo.svg" alt="Intelligent Systems Lab">
+    </a>
+    <ul class="nav-links">
+      <li><a href="../research.html">Research</a></li>
+      <li><a href="../people.html">People</a></li>
+      <li><a href="../publications.html">Publications</a></li>
+      <li><a href="../join.html">Join</a></li>
+      <li><a href="../index.html#footer">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile">
+    <a href="../research.html">Research</a>
+    <a href="../people.html">People</a>
+    <a href="../publications.html">Publications</a>
+    <a href="../join.html">Join</a>
+    <a href="../index.html#footer">Contact</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <span class="badge badge-active">Active</span>
+    <span class="project-years" style="color:rgba(255,255,255,0.78); margin-left:0.6rem;">2025–present</span>
+    <h1>Imitation Learning for Bimanual Robot Coordination</h1>
+    <p>Adapting the Stanford UMI demonstration-to-policy framework for dual RX150 robot arms.</p>
+  </div>
+</div>
+
+<section class="section" style="background:var(--color-bg)">
+  <div class="container" style="max-width:800px">
+    <a class="back-link" href="../research.html">← Back to Research</a>
+
+    <div class="project-detail-media">
+      <video autoplay muted loop playsinline>
+        <source src="../assets/videos/bimanual-umi-training.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <p>Adapted the Stanford UMI demonstration-to-policy framework for dual RX150 robot arms to train a policy for bimanual block handoff. Built a hardware translation layer converting predicted UMI-style actions into physical RX150 joint movements. Presented at SSU SD Expo 2026.</p>
+
+    <p style="margin-top:1rem; font-size:0.9rem; color:var(--color-text-muted)"><strong>Students:</strong> Nicholas Frangione, Kai Nunnemaker</p>
+  </div>
+</section>
+
+<section class="section" style="background:var(--color-surface); padding-top:0">
+  <div class="container" style="max-width:800px">
+    <h2 style="margin-bottom:1.5rem">Related Publications</h2>
+    <div class="pub-group">
+      <div class="pub-item">
+        <div class="pub-title">Deep Reinforcement Learning for a Four Degree of Freedom Robot Arm Accelerated by Human Demonstration</div>
+        <div class="pub-meta">3rd International Conference on Disruptive Technologies (ICDT), Greater Noida, India, 2025, pp.&nbsp;537–542</div>
+        <div class="pub-authors">K. Durand, R. J. Hernandez, S. Shrestha</div>
+        <a href="../publications.html#icdt2025-durand-hernandez" class="project-link" style="margin-top:0.5rem">View on Publications page →</a>
+      </div>
+      <div class="pub-item">
+        <div class="pub-title">Pre-contextualized Augmented Language Instructions for Autonomous Vision-and-Language Navigation</div>
+        <div class="pub-meta">3rd International Conference on Disruptive Technologies (ICDT), Greater Noida, India, 2025, pp.&nbsp;386–390</div>
+        <div class="pub-authors">O. Piazza, S. Shrestha</div>
+        <a href="../publications.html#icdt2025-piazza" class="project-link" style="margin-top:0.5rem">View on Publications page →</a>
+      </div>
+    </div>
+
+    <h2 style="margin:2.5rem 0 1.5rem">Additional Resources</h2>
+    <p style="color:var(--color-text-muted); margin-bottom:1rem; font-size:0.9rem">Unpublished student reports and materials related to this line of work.</p>
+    <ul class="resource-list">
+      <li><a href="../assets/files/bimanual-umi-group-presentation.pdf" target="_blank" rel="noopener">Training Bimanual Handoff using UMI — Project Presentation</a> <span class="resource-note">(Frangione &amp; Nunnemaker)</span></li>
+      <li><a href="../assets/files/roel-hernandez-ms-project-report.pdf" target="_blank" rel="noopener">Roel Hernandez — MS Project Report</a></li>
+      <li><a href="../assets/files/roel-hernandez-ms-project-presentation.pdf" target="_blank" rel="noopener">Roel Hernandez — MS Project Presentation</a></li>
+      <li><a href="../assets/files/roel-hernandez-research-poster.pdf" target="_blank" rel="noopener">Roel Hernandez — Research Poster</a></li>
+      <li><a href="../assets/files/kirk-durand-ms-thesis.pdf" target="_blank" rel="noopener">Kirk Durand — MS Thesis</a></li>
+      <li><a href="../assets/files/olivia-piazza-ms-report.pdf" target="_blank" rel="noopener">Olivia Piazza — MS Report</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="../assets/logo/isl-logo.svg" alt="ISL">
+        </div>
+        <div class="footer-tagline">Engineering intelligent systems for the real world.</div>
+        <div class="footer-addr">
+          Salazar 2002 / 2008 · 1801 East Cotati Avenue · Rohnert Park, CA 94928<br>
+          shrestsu@sonoma.edu
+        </div>
+      </div>
+      <nav class="footer-nav">
+        <h4>Site</h4>
+        <a href="../research.html">Research</a>
+        <a href="../people.html">People</a>
+        <a href="../publications.html">Publications</a>
+        <a href="../join.html">Join</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Intelligent Systems Lab, Sonoma State University</span>
+      <span>sonomaisl.ai</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

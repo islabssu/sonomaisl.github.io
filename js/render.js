@@ -28,7 +28,7 @@ function projectCard(p) {
         <h3>${p.title}</h3>
         <p>${p.description}</p>
         ${students}
-        <a class="project-link" href="research.html#${p.id}">View project →</a>
+        <a class="project-link" href="${p.page || `research.html#${p.id}`}">View project →</a>
       </div>
     </article>`;
 }
@@ -107,7 +107,7 @@ async function renderPublications() {
       ? `<div class="pub-abstract">${p.abstract}</div><button class="pub-toggle">▼ Show abstract</button>`
       : '';
     return `
-      <div class="pub-item">
+      <div class="pub-item"${p.id ? ` id="${p.id}"` : ''}>
         <div class="pub-title">${p.title}</div>
         <div class="pub-meta">${meta}</div>
         <div class="pub-authors">${p.authors.join(', ')}</div>
@@ -215,5 +215,9 @@ document.addEventListener('DOMContentLoaded', () => {
     renderPeople()
   ]).then(() => {
     if (typeof initVideoAutoplay === 'function') initVideoAutoplay();
+    if (location.hash) {
+      const target = document.getElementById(location.hash.slice(1));
+      if (target) target.scrollIntoView({ block: 'start' });
+    }
   });
 });
