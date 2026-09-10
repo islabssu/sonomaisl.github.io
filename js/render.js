@@ -96,7 +96,7 @@ async function renderPublications() {
   function pubHTML(p, type) {
     let meta = '';
     if (type === 'patent') {
-      meta = `Patent No. ${p.number} &mdash; Issued ${p.issued}`;
+      meta = `Patent No. ${p.number}, issued ${p.issued}`;
     } else if (type === 'journal') {
       const num = p.number ? `, no.&nbsp;${p.number}` : '';
       const pages = p.pages ? `, pp.&nbsp;${p.pages}` : '';
@@ -206,7 +206,7 @@ async function renderPeople() {
   if (hsEl && data.high_school_contributors) {
     hsEl.innerHTML = `<ul style="list-style:disc;padding-left:1.5rem;color:var(--color-text-muted);font-size:0.9rem;">
       ${data.high_school_contributors.map(h =>
-        `<li style="margin-bottom:0.4rem;">${h.name} — ${h.school}${h.year ? ', ' + h.year : ''}</li>`
+        `<li style="margin-bottom:0.4rem;">${h.name}, ${h.school}${h.year ? ', ' + h.year : ''}</li>`
       ).join('')}
     </ul>`;
   }
