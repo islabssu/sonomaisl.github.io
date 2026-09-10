@@ -97,8 +97,7 @@ async function renderPublications() {
     if (type === 'patent') {
       meta = `Patent No. ${p.number} &mdash; Issued ${p.issued}`;
     } else if (type === 'journal') {
-      const doi = p.doi ? ` &mdash; <a href="https://doi.org/${p.doi}" target="_blank" rel="noopener">DOI</a>` : '';
-      meta = `<em>${p.journal}</em>, vol.&nbsp;${p.volume}, no.&nbsp;${p.number}, ${p.year}${doi}`;
+      meta = `<em>${p.journal}</em>, vol.&nbsp;${p.volume}, no.&nbsp;${p.number}, ${p.year}`;
     } else {
       const pages = p.pages ? `, pp.&nbsp;${p.pages}` : '';
       meta = `${p.venue}${p.location ? ', ' + p.location : ''}, ${p.year}${pages}`;
@@ -106,12 +105,16 @@ async function renderPublications() {
     const abs = p.abstract
       ? `<div class="pub-abstract">${p.abstract}</div><button class="pub-toggle">▼ Show abstract</button>`
       : '';
+    const link = p.url
+      ? `<a href="${p.url}" target="_blank" rel="noopener" class="project-link" style="margin-top:0.4rem">View publication →</a>`
+      : '';
     return `
       <div class="pub-item"${p.id ? ` id="${p.id}"` : ''}>
         <div class="pub-title">${p.title}</div>
         <div class="pub-meta">${meta}</div>
         <div class="pub-authors">${p.authors.join(', ')}</div>
         ${abs}
+        ${link}
       </div>`;
   }
 
