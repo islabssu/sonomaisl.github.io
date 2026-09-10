@@ -7,8 +7,7 @@
     "years": "2025–present",
     "featured": true,
     "page": "research/bimanual-umi.html",
-    "description": "Adapted the Stanford UMI demonstration-to-policy framework for dual RX150 robot arms to train a policy for bimanual block handoff. Built a hardware translation layer converting predicted UMI-style actions into physical RX150 joint movements. Presented at SSU SD Expo 2026.",
-    "students": ["Nicholas Frangione", "Kai Nunnemaker"],
+    "description": "Adapted the Stanford UMI demonstration-to-policy framework for dual RX150 robot arms, building two custom UMI gripper sets to collect demonstration data and train a diffusion policy for bimanual block pick-and-place. Implementation and further training are in progress; the RX150 arms will be replaced with new WidowX arms for continued data collection and real-hardware deployment.",
     "image": "assets/images/projects/bimanual-umi.jpeg",
     "video": "assets/videos/bimanual-umi-training.mp4"
   },
