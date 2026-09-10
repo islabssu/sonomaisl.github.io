@@ -109,7 +109,8 @@
     "description": "Built a sensor-equipped glove that translated hand gestures into robot arm commands, enabling intuitive physical human-robot interaction.",
     "students": [],
     "image": null,
-    "video": "assets/videos/gesture-robot-arm-demo.mp4"
+    "video": "assets/videos/gesture-robot-arm-demo.mp4",
+    "videoPosition": "center 20%"
   },
   {
     "id": "voc-air-quality",
