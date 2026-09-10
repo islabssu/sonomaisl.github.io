@@ -6,6 +6,7 @@
       "number": "US 12,278,013 B2",
       "issued": "April 15, 2025",
       "authors": ["S. Shrestha"],
+      "url": "https://patents.google.com/patent/US12278013",
       "abstract": "A device configured to determine a level or concentration of a disease-related analyte in a person's blood from volatile analytes in the person's breath. Includes one or more sensors, a microcontroller, a transmitter, a battery, and a housing with an exhalation port."
     }
   ],
@@ -19,6 +20,7 @@
       "year": 2025,
       "authors": ["S. Naser", "D. A. Roberts", "S. Shrestha"],
       "doi": "10.3390/bios15030149",
+      "url": "https://doi.org/10.3390/bios15030149",
       "abstract": "Investigates VOCs in breath as non-invasive biomarkers for monitoring blood glucose in Type-2 diabetes patients. A pilot clinical study with six patients using a custom sensor device achieved 85% and 82% accuracy with SVM and Random Forest models respectively."
     },
     {
@@ -30,6 +32,7 @@
       "year": 2019,
       "authors": ["M. Boubin", "S. Shrestha"],
       "doi": "10.3390/s19102283",
+      "url": "https://doi.org/10.3390/s19102283",
       "abstract": null
     },
     {
@@ -41,6 +44,7 @@
       "year": 2020,
       "authors": ["P. Vora", "S. Shrestha"],
       "doi": "10.3390/app10207274",
+      "url": "https://doi.org/10.3390/app10207274",
       "abstract": "Presents an embedded computer vision algorithm for classifying healthy versus diabetic-retinopathic retinal images using a convolutional neural network, trained and cross-validated on roughly 88,000 labeled images from the Kaggle/EyePACS dataset."
     }
   ],
@@ -53,6 +57,8 @@
       "year": 2025,
       "pages": "537–542",
       "authors": ["K. Durand", "R. J. Hernandez", "S. Shrestha"],
+      "doi": "10.1109/ICDT63985.2025.10986448",
+      "url": "https://doi.org/10.1109/ICDT63985.2025.10986448",
       "abstract": null
     },
     {
@@ -63,6 +69,8 @@
       "year": 2025,
       "pages": "386–390",
       "authors": ["O. Piazza", "S. Shrestha"],
+      "doi": "10.1109/ICDT63985.2025.10986598",
+      "url": "https://doi.org/10.1109/ICDT63985.2025.10986598",
       "abstract": null
     },
     {
@@ -72,6 +80,8 @@
       "location": "Baltimore, Maryland",
       "year": 2019,
       "authors": ["S. Shrestha", "C. Harold", "M. Boubin", "L. Lawrence"],
+      "doi": "10.1117/12.2521365",
+      "url": "https://doi.org/10.1117/12.2521365",
       "abstract": null
     },
     {
@@ -82,6 +92,8 @@
       "year": 2018,
       "pages": "0129–0133",
       "authors": ["Y.-T. Chen", "S. Shrestha"],
+      "doi": "10.1109/EIT.2018.8500198",
+      "url": "https://doi.org/10.1109/EIT.2018.8500198",
       "abstract": null
     },
     {
@@ -92,6 +104,8 @@
       "year": 2018,
       "pages": "0415–0419",
       "authors": ["T. McWhorter", "S. Shrestha"],
+      "doi": "10.1109/EIT.2018.8500287",
+      "url": "https://doi.org/10.1109/EIT.2018.8500287",
       "abstract": null
     }
   ]
