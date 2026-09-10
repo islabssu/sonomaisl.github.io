@@ -72,7 +72,8 @@
     "page": "research/deep-rl-robot-arm.html",
     "description": "Trained a 4-DOF robotic arm to reach arbitrary target positions using a Dueling Double Deep Q-Network (D3QN), accelerated by human demonstration data. Validated on both the PhantomX Reactor and Dobot Magician arms. Published at ICDT 2025.",
     "students": ["Kirk Durand", "Roel Hernandez"],
-    "image": "assets/images/projects/deep-rl-robot-arm.jpg"
+    "image": "assets/images/projects/deep-rl-robot-arm.jpg",
+    "video": "assets/videos/deep-rl-robot-arm-demo.mp4"
   },
   {
     "id": "fmcw-radar-rescue",
