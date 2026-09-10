@@ -8,6 +8,15 @@
       "authors": ["S. Shrestha"],
       "url": "https://patents.google.com/patent/US12278013",
       "abstract": "A device configured to determine a level or concentration of a disease-related analyte in a person's blood from volatile analytes in the person's breath. Includes one or more sensors, a microcontroller, a transmitter, a battery, and a housing with an exhalation port."
+    },
+    {
+      "id": "patent-voc-sensors",
+      "title": "Volatile Organic Compound Sensors, and Methods of Making and Using the Same",
+      "number": "US 10,107,827 B1",
+      "issued": "October 22, 2018",
+      "authors": ["S. Shrestha", "A. Daneshkhah", "M. Agarwal", "K. Varahramyan"],
+      "url": "https://patents.google.com/patent/US10107827B1/en",
+      "abstract": null
     }
   ],
   "journal": [
@@ -46,6 +55,42 @@
       "doi": "10.3390/app10207274",
       "url": "https://doi.org/10.3390/app10207274",
       "abstract": "Presents an embedded computer vision algorithm for classifying healthy versus diabetic-retinopathic retinal images using a convolutional neural network, trained and cross-validated on roughly 88,000 labeled images from the Kaggle/EyePACS dataset."
+    },
+    {
+      "id": "jbr2017-siegel",
+      "title": "Analyzing Breath Samples of Hypoglycemic Events in Type 1 Diabetes Patients: Towards Developing an Alternative to Diabetes Alert Dogs",
+      "journal": "Journal of Breath Research",
+      "volume": 11,
+      "number": 2,
+      "year": 2017,
+      "authors": ["A. P. Siegel", "A. Daneshkhah", "D. S. Hardin", "S. Shrestha", "K. Varahramyan", "M. Agarwal"],
+      "doi": "10.1088/1752-7163/aa6ac6",
+      "url": "https://doi.org/10.1088/1752-7163/aa6ac6",
+      "abstract": "Uses gas chromatography/mass spectrometry on breath samples from youths with Type 1 diabetes to identify hypoglycemic events, achieving 91% sensitivity and 84% specificity as a potential alternative to diabetes alert dogs."
+    },
+    {
+      "id": "sab2015-daneshkhah",
+      "title": "Poly(Vinylidene Fluoride-Hexafluoropropylene) Composite Sensors for Volatile Organic Compounds Detection in Breath",
+      "journal": "Sensors and Actuators B: Chemical",
+      "volume": 221,
+      "pages": "635–643",
+      "year": 2015,
+      "authors": ["A. Daneshkhah", "S. Shrestha", "M. Agarwal", "K. Varahramyan"],
+      "doi": "10.1016/j.snb.2015.06.145",
+      "url": "https://doi.org/10.1016/j.snb.2015.06.145",
+      "abstract": null
+    },
+    {
+      "id": "sensors2017-daneshkhah",
+      "title": "Cross-Selectivity Enhancement of Poly(Vinylidene Fluoride-Hexafluoropropylene)-Based Sensor Arrays for Detecting Acetone and Ethanol",
+      "journal": "Sensors",
+      "volume": 17,
+      "number": 3,
+      "year": 2017,
+      "authors": ["A. Daneshkhah", "S. Shrestha", "A. Siegel", "K. Varahramyan", "M. Agarwal"],
+      "doi": "10.3390/s17030595",
+      "url": "https://doi.org/10.3390/s17030595",
+      "abstract": null
     }
   ],
   "conference": [
@@ -106,6 +151,29 @@
       "authors": ["T. McWhorter", "S. Shrestha"],
       "doi": "10.1109/EIT.2018.8500287",
       "url": "https://doi.org/10.1109/EIT.2018.8500287",
+      "abstract": null
+    },
+    {
+      "id": "spie2014-daneshkhah-acetone",
+      "title": "PPy/PMMA/PEG-Based Sensor for Low-Concentration Acetone Detection",
+      "venue": "Smart Biomedical and Physiological Sensor Technology XI, SPIE",
+      "location": "Baltimore, Maryland",
+      "year": 2014,
+      "pages": "910712",
+      "authors": ["A. Daneshkhah", "S. Shrestha", "et al."],
+      "doi": "10.1117/12.2050623",
+      "url": "https://doi.org/10.1117/12.2050623",
+      "abstract": null
+    },
+    {
+      "id": "spie2017-chen-enose",
+      "title": "Electronic Nose for Ambient Detection and Monitoring",
+      "venue": "SPIE Defense and Commercial Sensing",
+      "location": "Anaheim, California",
+      "year": 2017,
+      "authors": ["Y.-T. Chen", "Z. Samborsky", "S. Shrestha"],
+      "doi": "10.1117/12.2262870",
+      "url": "https://doi.org/10.1117/12.2262870",
       "abstract": null
     }
   ]

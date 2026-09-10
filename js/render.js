@@ -97,7 +97,9 @@ async function renderPublications() {
     if (type === 'patent') {
       meta = `Patent No. ${p.number} &mdash; Issued ${p.issued}`;
     } else if (type === 'journal') {
-      meta = `<em>${p.journal}</em>, vol.&nbsp;${p.volume}, no.&nbsp;${p.number}, ${p.year}`;
+      const num = p.number ? `, no.&nbsp;${p.number}` : '';
+      const pages = p.pages ? `, pp.&nbsp;${p.pages}` : '';
+      meta = `<em>${p.journal}</em>, vol.&nbsp;${p.volume}${num}, ${p.year}${pages}`;
     } else {
       const pages = p.pages ? `, pp.&nbsp;${p.pages}` : '';
       meta = `${p.venue}${p.location ? ', ' + p.location : ''}, ${p.year}${pages}`;
