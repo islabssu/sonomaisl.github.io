@@ -13,6 +13,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo/apple-touch-icon.png">
   <link rel="stylesheet" href="../css/style.css">
   <style>
+    .project-detail-media { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); margin-bottom: 2rem; }
+    .project-detail-media video, .project-detail-media img { width: 100%; display: block; }
     .back-link { display: inline-block; margin-bottom: 1.5rem; font-size: 0.85rem; color: var(--color-text-muted); }
     .back-link:hover { color: var(--color-primary); }
   </style>
@@ -56,6 +58,12 @@
 <section class="section" style="background:var(--color-bg)">
   <div class="container" style="max-width:800px">
     <a class="back-link" href="../research.html">← Back to Research</a>
+
+    <div class="project-detail-media">
+      <video autoplay muted loop playsinline>
+        <source src="../assets/videos/gesture-robot-arm-demo.mp4" type="video/mp4">
+      </video>
+    </div>
 
     <p>Built a sensor-equipped glove that translated hand gestures into robot arm commands, enabling intuitive physical human-robot interaction. One of the lab's earliest robotics projects, it explored direct gesture-based teleoperation as an alternative to conventional joystick or programmed control.</p>
   </div>
