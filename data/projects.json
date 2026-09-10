@@ -60,7 +60,8 @@
     "page": "research/robot-nlp-navigation.html",
     "description": "Developed deep-learning-based robot control and autonomous navigation driven by verbal commands, combining a vision system, a language interpretation system, and path planning. A parallel strand used YOLO object detection and LiDAR to navigate a TurtleBot3 to detected targets in simulation.",
     "students": ["Olivia Piazza", "Washaka Mahdi", "Jorge Solorio"],
-    "image": "assets/images/projects/robot-nlp-navigation.jpg"
+    "image": "assets/images/projects/robot-nlp-navigation.jpg",
+    "video": "assets/videos/robot-nlp-navigation-demo.mp4"
   },
   {
     "id": "deep-rl-robot-arm",
