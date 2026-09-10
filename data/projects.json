@@ -84,8 +84,9 @@
     "featured": false,
     "page": "research/fmcw-radar-rescue.html",
     "description": "Developed a low-cost FMCW radar system for locating victims trapped under debris following earthquakes and other disasters. Demonstrated detection of small movements through concrete.",
-    "students": ["Khuram Shehzad", "Anthony Arjona"],
-    "image": null
+    "students": ["Khuram Shehzad", "Anthony Arjona Pech"],
+    "image": "assets/images/projects/fmcw-radar-rescue.jpg",
+    "imagePosition": "center 65%"
   },
   {
     "id": "diabetic-retinopathy",
