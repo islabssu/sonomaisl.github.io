@@ -11,8 +11,9 @@ function badge(status) {
 }
 
 function projectCard(p) {
+  const pos = p.videoPosition || 'center';
   const img = p.video
-    ? `<video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover"><source src="${p.video}" type="video/mp4"></video>`
+    ? `<video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;object-position:${pos}"><source src="${p.video}" type="video/mp4"></video>`
     : p.image
       ? `<img src="${p.image}" alt="${p.title}" loading="lazy">`
       : '';
