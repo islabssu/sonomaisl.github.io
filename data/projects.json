@@ -60,7 +60,7 @@
     "page": "research/robot-nlp-navigation.html",
     "description": "Developed deep-learning-based robot control and an autonomous navigation system driven by verbal commands, combining a vision system, a language interpretation system, and path planning.",
     "students": ["Olivia Piazza", "Washaka Mahdi"],
-    "image": null
+    "image": "assets/images/projects/robot-nlp-navigation.jpg"
   },
   {
     "id": "deep-rl-robot-arm",
@@ -72,7 +72,7 @@
     "page": "research/deep-rl-robot-arm.html",
     "description": "Trained a 4-DOF robotic arm to reach arbitrary target positions using a Dueling Double Deep Q-Network (D3QN), accelerated by human demonstration data. Validated on both the PhantomX Reactor and Dobot Magician arms. Published at ICDT 2025.",
     "students": ["Kirk Durand", "Roel Hernandez"],
-    "image": null
+    "image": "assets/images/projects/deep-rl-robot-arm.jpg"
   },
   {
     "id": "fmcw-radar-rescue",

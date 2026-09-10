@@ -13,6 +13,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo/apple-touch-icon.png">
   <link rel="stylesheet" href="../css/style.css">
   <style>
+    .project-detail-media { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); margin-bottom: 2rem; }
+    .project-detail-media video, .project-detail-media img { width: 100%; display: block; }
     .back-link { display: inline-block; margin-bottom: 1.5rem; font-size: 0.85rem; color: var(--color-text-muted); }
     .back-link:hover { color: var(--color-primary); }
     .resource-list { list-style: disc; padding-left: 1.5rem; }
@@ -61,6 +63,10 @@
 <section class="section" style="background:var(--color-bg)">
   <div class="container" style="max-width:800px">
     <a class="back-link" href="../research.html">← Back to Research</a>
+
+    <div class="project-detail-media">
+      <img src="../assets/images/projects/robot-nlp-navigation.jpg" alt="First-person view from the navigation agent's simulated environment, from Olivia Piazza's MS thesis">
+    </div>
 
     <p>Developed deep-learning-based robot control and an autonomous navigation system driven by verbal commands, combining a vision system, a language interpretation system, and path planning.</p>
 
