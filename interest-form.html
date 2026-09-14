@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Interest Form | Intelligent Systems Lab</title>
+  <meta name="description" content="Express interest in joining ISL's research team: tell us about yourself and rank the projects you're most interested in.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32.png">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/isl-mark.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo/isl-logo.svg" alt="Intelligent Systems Lab">
+    </a>
+    <ul class="nav-links">
+      <li><a href="research.html">Research</a></li>
+      <li><a href="people.html">People</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="index.html#footer">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile">
+    <a href="research.html">Research</a>
+    <a href="people.html">People</a>
+    <a href="publications.html">Publications</a>
+    <a href="join.html">Join</a>
+    <a href="index.html#footer">Contact</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <h1>Research Interest Form</h1>
+    <p>Tell us about yourself and which projects interest you. Dr. Shrestha reviews every submission personally.</p>
+  </div>
+</div>
+
+<section class="form-section">
+  <div class="container">
+    <div class="form-card">
+      <form id="interest-form" action="https://formsubmit.co/shrestsu@sonoma.edu" method="POST">
+
+        <!-- FormSubmit configuration -->
+        <input type="hidden" name="_subject" value="New ISL Research Interest Submission">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://sonomaisl.ai/interest-thank-you.html">
+        <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off">
+
+        <fieldset class="form-fieldset">
+          <legend>Your Information</legend>
+          <div class="form-grid-2">
+            <div class="form-row">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="level">I am a...</label>
+            <select id="level" name="level" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="Graduate">Graduate student</option>
+              <option value="Undergraduate">Undergraduate student</option>
+              <option value="High School">High school student</option>
+            </select>
+          </div>
+
+          <div class="form-conditional" id="group-college">
+            <div class="form-grid-2">
+              <div class="form-row">
+                <label for="major">Major</label>
+                <input type="text" id="major" name="major">
+              </div>
+              <div class="form-row">
+                <label for="expected_graduation">Expected Graduation</label>
+                <input type="text" id="expected_graduation" name="expected_graduation" placeholder="e.g., May 2027">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-conditional" id="group-hs">
+            <div class="form-grid-2">
+              <div class="form-row">
+                <label for="school_name">School Name</label>
+                <input type="text" id="school_name" name="school_name">
+              </div>
+              <div class="form-row">
+                <label for="grade">Grade</label>
+                <select id="grade" name="grade">
+                  <option value="" disabled selected>Select one</option>
+                  <option value="9th">9th</option>
+                  <option value="10th">10th</option>
+                  <option value="11th">11th</option>
+                  <option value="12th">12th</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-fieldset">
+          <legend>Project Interest</legend>
+          <p class="form-hint">Rank the projects 1 (most interested) through 4. You don't have to rank all four — leave any you're not interested in blank.</p>
+
+          <div class="rank-row">
+            <div class="rank-row-info">
+              <div class="rank-title">UMI &mdash; Universal Manipulation Interface</div>
+              <div class="rank-desc">Collect human demonstrations with handheld grippers and turn them into robot skills.</div>
+            </div>
+            <select name="rank_umi">
+              <option value=""></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+
+          <div class="rank-row">
+            <div class="rank-row-info">
+              <div class="rank-title">Sim to Real &mdash; Simulation to Hardware Transfer</div>
+              <div class="rank-desc">Train policies in simulation and make them work on the physical arms.</div>
+            </div>
+            <select name="rank_sim_to_real">
+              <option value=""></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+
+          <div class="rank-row">
+            <div class="rank-row-info">
+              <div class="rank-title">Teleoperation &mdash; Human-in-the-Loop Control</div>
+              <div class="rank-desc">Drive the dual-arm system directly and record high-quality demonstration data.</div>
+            </div>
+            <select name="rank_teleoperation">
+              <option value=""></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+
+          <div class="rank-row">
+            <div class="rank-row-info">
+              <div class="rank-title">VOC Sensing &mdash; Breath-Based Diagnostics</div>
+              <div class="rank-desc">Build sensor hardware and models that read volatile compounds in breath.</div>
+            </div>
+            <select name="rank_voc_sensing">
+              <option value=""></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+
+          <div class="form-error" id="rank-error">Each rank (1-4) can only be used once. Please fix your rankings before submitting.</div>
+        </fieldset>
+
+        <fieldset class="form-fieldset">
+          <legend>Relevant Experience &amp; Why ISL</legend>
+          <div class="essay-note">
+            Please write this yourself, in your own words. Do not use AI to write or polish this answer &mdash; we want to hear from you directly. Copy and paste are disabled on this field.
+          </div>
+          <div class="form-row">
+            <label for="essay">Describe any relevant experience and why you want to work in the lab</label>
+            <textarea id="essay" name="essay" rows="8" required></textarea>
+          </div>
+        </fieldset>
+
+        <div class="form-submit-row">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="assets/logo/isl-logo.svg" alt="ISL">
+        </div>
+        <div class="footer-tagline">Engineering intelligent systems for the real world.</div>
+        <div class="footer-addr">
+          Salazar 2002 / 2008 · 1801 East Cotati Avenue · Rohnert Park, CA 94928<br>
+          shrestsu@sonoma.edu
+        </div>
+      </div>
+      <nav class="footer-nav">
+        <h4>Site</h4>
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="join.html">Join</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Intelligent Systems Lab, Sonoma State University</span>
+      <span>sonomaisl.ai</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

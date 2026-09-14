@@ -43,8 +43,81 @@ function initVideoAutoplay() {
   document.addEventListener('touchend', unlock, { passive: true });
 }
 
+function initInterestForm() {
+  const form = document.getElementById('interest-form');
+  if (!form) return;
+
+  const level        = document.getElementById('level');
+  const collegeGroup = document.getElementById('group-college');
+  const hsGroup       = document.getElementById('group-hs');
+  const majorField    = document.getElementById('major');
+  const gradField      = document.getElementById('expected_graduation');
+  const schoolField    = document.getElementById('school_name');
+  const gradeField     = document.getElementById('grade');
+
+  function updateLevelGroups() {
+    const isCollege = level.value === 'Graduate' || level.value === 'Undergraduate';
+    const isHS       = level.value === 'High School';
+
+    collegeGroup.classList.toggle('visible', isCollege);
+    hsGroup.classList.toggle('visible', isHS);
+
+    majorField.required = isCollege;
+    gradField.required   = isCollege;
+    schoolField.required = isHS;
+    gradeField.required  = isHS;
+
+    if (!isCollege) { majorField.value = ''; gradField.value = ''; }
+    if (!isHS)       { schoolField.value = ''; gradeField.value = ''; }
+  }
+
+  if (level) {
+    level.addEventListener('change', updateLevelGroups);
+    updateLevelGroups();
+  }
+
+  // Block copy/paste/cut on the essay field so answers are typed by hand.
+  const essay = document.getElementById('essay');
+  if (essay) {
+    ['paste', 'copy', 'cut', 'drop'].forEach(evt => {
+      essay.addEventListener(evt, e => e.preventDefault());
+    });
+  }
+
+  // Prevent the same rank (1-4) being assigned to more than one project.
+  const rankSelects = form.querySelectorAll('select[name^="rank_"]');
+  const rankError    = document.getElementById('rank-error');
+
+  function ranksValid() {
+    const used = [];
+    let ok = true;
+    rankSelects.forEach(sel => {
+      if (sel.value && used.includes(sel.value)) ok = false;
+      if (sel.value) used.push(sel.value);
+    });
+    return ok;
+  }
+
+  form.addEventListener('submit', e => {
+    if (!ranksValid()) {
+      e.preventDefault();
+      rankError.classList.add('visible');
+      rankError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else if (rankError) {
+      rankError.classList.remove('visible');
+    }
+  });
+
+  rankSelects.forEach(sel => {
+    sel.addEventListener('change', () => {
+      if (ranksValid() && rankError) rankError.classList.remove('visible');
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initVideoAutoplay();
+  initInterestForm();
   const nav       = document.querySelector('.nav');
   const hamburger = document.querySelector('.nav-hamburger');
   const mobile    = document.querySelector('.nav-mobile');
