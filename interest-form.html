@@ -43,14 +43,25 @@
 <div class="page-hero">
   <div class="container">
     <h1>Research Interest Form</h1>
-    <p>Tell us about yourself and which projects interest you. Dr. Shrestha reviews every submission personally.</p>
+    <p>Applications for Fall 2026 are closed. The next window opens in February 2027.</p>
   </div>
 </div>
 
 <section class="form-section">
   <div class="container">
-    <div class="form-card">
-      <form id="interest-form" action="https://formsubmit.co/shrestsu@sonoma.edu" method="POST">
+
+    <!-- TO REOPEN THE FORM: delete this .form-closed block, then remove the
+         "hidden" attribute from the <form> tag and "disabled" from the submit
+         button further down. Nothing else needs to change. -->
+    <div class="form-closed">
+      <h2>Applications are closed</h2>
+      <p>The application for Fall 2026 has been closed.</p>
+      <p class="form-closed-window">Next application window: February 1&ndash;15, 2027.</p>
+      <a href="join.html" class="btn btn-teal">Back to Get Involved</a>
+    </div>
+
+    <div class="form-card" hidden>
+      <form id="interest-form" action="https://formsubmit.co/shrestsu@sonoma.edu" method="POST" hidden>
 
         <!-- FormSubmit configuration -->
         <input type="hidden" name="_subject" value="New ISL Research Interest Submission">
@@ -188,7 +199,7 @@
         </fieldset>
 
         <div class="form-submit-row">
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary" disabled>Submit</button>
         </div>
       </form>
     </div>
