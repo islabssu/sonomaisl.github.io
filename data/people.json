@@ -10,51 +10,237 @@
     "photo": null
   },
   "current_students": [
-    { "name": "Mahdi Kacem",           "degree": "MSECE", "focus": "Intelligent systems and embedded AI" },
-    { "name": "Antonio Cigala",        "degree": "BSEE",  "focus": "Imitation learning for bimanual robot coordination" },
-    { "name": "Anthony Meyer Slechta", "degree": "BSEE",  "focus": "Vision-language-action robotic systems" },
-    { "name": "Jacob Jaffee",          "degree": "BSEE",  "focus": "Vision-language-action robotic systems" },
-    { "name": "Zella Waltman",         "degree": "BSEE",  "focus": "Vision-language-action robotic systems" },
-    { "name": "Nicholas Frangione",    "degree": "BSCS",  "focus": "Bimanual manipulation and imitation learning" },
-    { "name": "Kai Nunnemaker",        "degree": "BSCS",  "focus": "Bimanual manipulation and imitation learning" },
-    { "name": "Juan Guzman",           "degree": "BSEE",  "focus": "Intelligent systems and embedded AI" },
-    { "name": "Kyler Exley",           "degree": "BSEE",  "focus": "Intelligent systems and embedded AI" }
+    {
+      "name": "Antonio Cigala",
+      "degree": "BSEE",
+      "focus": "Imitation learning for bimanual coordination using UMI"
+    },
+    {
+      "name": "Blake Beristain",
+      "degree": "BSEE",
+      "focus": "Learning and control for bimanual coordination through teleoperation"
+    },
+    {
+      "name": "Esli Calderon",
+      "degree": "BSEE",
+      "focus": "Learning and control for bimanual coordination through teleoperation"
+    },
+    {
+      "name": "Andy Bao",
+      "degree": "BSCS",
+      "focus": "Sim-to-real transfer learning"
+    }
   ],
   "alumni": [
-    { "name": "Sokiyna Naser",      "degree": "M.S.", "year": 2024, "project": "At-Home Breath Profile Data Collection for Type-2 Diabetes" },
-    { "name": "Washaka Mahdi",      "degree": "M.S.", "year": 2024, "project": "OpenAI-Based ChatBot for SSU Engineering Website" },
-    { "name": "Jorge Solorio",      "degree": "M.S.", "year": 2023, "project": "Automatic Navigation of Turtlebot3 Using Vision and LiDAR" },
-    { "name": "Austin Escalante",   "degree": "M.S.", "year": 2023, "project": "Exterior Vehicle Damage Assessment Using Deep Learning" },
-    { "name": "Joel Richin",        "degree": "M.S.", "year": 2023, "project": "State Tracking System for Legacy Semiconductor Equipment" },
-    { "name": "Het Patel",          "degree": "M.S.", "year": 2023, "project": "RTOS-Based Breath Data Collection Device with 4G Logging" },
-    { "name": "Abhijith Nidanakavi","degree": "M.S.", "year": 2023, "project": "TruthSeeker: AI-Driven Detection of Fake and Propaganda Texts" },
-    { "name": "Scott Parmley",      "degree": "M.S.", "year": 2022, "project": "Autonomous Yield Estimator" },
-    { "name": "Priya Patel",        "degree": "M.S.", "year": 2022, "project": "STM32-Based Breath VOC Sensor System Design" },
-    { "name": "Roel Hernandez",     "degree": "M.S.", "year": 2022, "project": "Deep RL Robot Arm Control via Human Demonstrations" },
-    { "name": "Kirk Durand",        "degree": "M.S.", "year": 2021, "project": "Deep RL for 4-DOF Robot Arm Control Simulation" },
-    { "name": "Olivia Piazza",      "degree": "M.S.", "year": 2020, "project": "NLP for Robotic Navigation Through Unknown Environments" },
-    { "name": "Khuram Shehzad",     "degree": "M.S.", "year": 2020, "project": "FMCW Radar for Search and Rescue Applications" },
-    { "name": "Parshva Vora",       "degree": "M.S.", "year": 2019, "project": "Diabetic Retinopathy Detection via Embedded Computer Vision" },
-    { "name": "Matthew Boubin",     "degree": "M.S.", "year": 2019, "project": "SVM for Blood Glucose Detection via Breath VOCs" },
-    { "name": "Yan-Ting Chen",      "degree": "M.S.", "year": 2018, "project": "Smart Sensing System for Indoor Air Quality Monitoring" }
+    {
+      "name": "Sokiyna Naser",
+      "degree": "M.S.",
+      "year": 2024,
+      "project": "At-Home Breath Profile Data Collection for Type-2 Diabetes"
+    },
+    {
+      "name": "Washaka Mahdi",
+      "degree": "M.S.",
+      "year": 2024,
+      "project": "OpenAI-Based ChatBot for SSU Engineering Website"
+    },
+    {
+      "name": "Jorge Solorio",
+      "degree": "M.S.",
+      "year": 2023,
+      "project": "Automatic Navigation of Turtlebot3 Using Vision and LiDAR"
+    },
+    {
+      "name": "Austin Escalante",
+      "degree": "M.S.",
+      "year": 2023,
+      "project": "Exterior Vehicle Damage Assessment Using Deep Learning"
+    },
+    {
+      "name": "Joel Richin",
+      "degree": "M.S.",
+      "year": 2023,
+      "project": "State Tracking System for Legacy Semiconductor Equipment"
+    },
+    {
+      "name": "Het Patel",
+      "degree": "M.S.",
+      "year": 2023,
+      "project": "RTOS-Based Breath Data Collection Device with 4G Logging"
+    },
+    {
+      "name": "Abhijith Nidanakavi",
+      "degree": "M.S.",
+      "year": 2023,
+      "project": "TruthSeeker: AI-Driven Detection of Fake and Propaganda Texts"
+    },
+    {
+      "name": "Scott Parmley",
+      "degree": "M.S.",
+      "year": 2022,
+      "project": "Autonomous Yield Estimator"
+    },
+    {
+      "name": "Priya Patel",
+      "degree": "M.S.",
+      "year": 2022,
+      "project": "STM32-Based Breath VOC Sensor System Design"
+    },
+    {
+      "name": "Roel Hernandez",
+      "degree": "M.S.",
+      "year": 2022,
+      "project": "Deep RL Robot Arm Control via Human Demonstrations"
+    },
+    {
+      "name": "Kirk Durand",
+      "degree": "M.S.",
+      "year": 2021,
+      "project": "Deep RL for 4-DOF Robot Arm Control Simulation"
+    },
+    {
+      "name": "Olivia Piazza",
+      "degree": "M.S.",
+      "year": 2020,
+      "project": "NLP for Robotic Navigation Through Unknown Environments"
+    },
+    {
+      "name": "Khuram Shehzad",
+      "degree": "M.S.",
+      "year": 2020,
+      "project": "FMCW Radar for Search and Rescue Applications"
+    },
+    {
+      "name": "Parshva Vora",
+      "degree": "M.S.",
+      "year": 2019,
+      "project": "Diabetic Retinopathy Detection via Embedded Computer Vision"
+    },
+    {
+      "name": "Matthew Boubin",
+      "degree": "M.S.",
+      "year": 2019,
+      "project": "SVM for Blood Glucose Detection via Breath VOCs"
+    },
+    {
+      "name": "Yan-Ting Chen",
+      "degree": "M.S.",
+      "year": 2018,
+      "project": "Smart Sensing System for Indoor Air Quality Monitoring"
+    }
   ],
   "notable_undergrads": [
-    { "name": "Jessie Lopez",        "program": "EE",      "year": 2025 },
-    { "name": "Alexis Buenrostro",   "program": "EE",      "year": 2025 },
-    { "name": "Natalie Liang",       "program": "EE",      "year": 2023 },
-    { "name": "Rubi Santiago",       "program": "Nursing",  "year": 2023 },
-    { "name": "Anja Damazyn",        "program": "Nursing",  "year": 2023 },
-    { "name": "Gaven Hayden-Town",   "program": "EE",      "year": 2021 },
-    { "name": "Anthony Arjona",      "program": "EE",      "year": 2021 },
-    { "name": "Alexander Sneed",     "program": "EE",      "year": 2021 },
-    { "name": "Logan Lawrence",      "program": "EE",      "year": 2020 },
-    { "name": "Casey Harold",        "program": "EE",      "year": null }
+    {
+      "name": "Anthony Meyer Slechta",
+      "program": "EE",
+      "year": 2026
+    },
+    {
+      "name": "Jacob Jaffee",
+      "program": "EE",
+      "year": 2026
+    },
+    {
+      "name": "Zella Waltman",
+      "program": "EE",
+      "year": 2026
+    },
+    {
+      "name": "Nicholas Frangione",
+      "program": "CS",
+      "year": 2026
+    },
+    {
+      "name": "Kai Nunnemaker",
+      "program": "CS",
+      "year": 2026
+    },
+    {
+      "name": "Juan Guzman",
+      "program": "EE",
+      "year": 2026
+    },
+    {
+      "name": "Kyler Exley",
+      "program": "EE",
+      "year": 2026
+    },
+    {
+      "name": "Jessie Lopez",
+      "program": "EE",
+      "year": 2025
+    },
+    {
+      "name": "Alexis Buenrostro",
+      "program": "EE",
+      "year": 2025
+    },
+    {
+      "name": "Natalie Liang",
+      "program": "EE",
+      "year": 2023
+    },
+    {
+      "name": "Rubi Santiago",
+      "program": "Nursing",
+      "year": 2023
+    },
+    {
+      "name": "Anja Damazyn",
+      "program": "Nursing",
+      "year": 2023
+    },
+    {
+      "name": "Gaven Hayden-Town",
+      "program": "EE",
+      "year": 2021
+    },
+    {
+      "name": "Anthony Arjona",
+      "program": "EE",
+      "year": 2021
+    },
+    {
+      "name": "Alexander Sneed",
+      "program": "EE",
+      "year": 2021
+    },
+    {
+      "name": "Logan Lawrence",
+      "program": "EE",
+      "year": 2020
+    },
+    {
+      "name": "Casey Harold",
+      "program": "EE",
+      "year": null
+    }
   ],
   "high_school_contributors": [
-    { "name": "Kyle Wu",          "school": "Maria Carrillo High School", "year": 2020 },
-    { "name": "Dipen Timsina",    "school": "Technology High School",     "year": 2020 },
-    { "name": "Vinay Nagappala",  "school": "Montgomery High School",     "year": 2019 },
-    { "name": "Julia Pastis",     "school": "Santa Rosa High School",     "year": 2018 },
-    { "name": "Ziven Posner",     "school": "El Molino High School",      "year": 2018 }
+    {
+      "name": "Kyle Wu",
+      "school": "Maria Carrillo High School",
+      "year": 2020
+    },
+    {
+      "name": "Dipen Timsina",
+      "school": "Technology High School",
+      "year": 2020
+    },
+    {
+      "name": "Vinay Nagappala",
+      "school": "Montgomery High School",
+      "year": 2019
+    },
+    {
+      "name": "Julia Pastis",
+      "school": "Santa Rosa High School",
+      "year": 2018
+    },
+    {
+      "name": "Ziven Posner",
+      "school": "El Molino High School",
+      "year": 2018
+    }
   ]
 }
