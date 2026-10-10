@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSU Robotics Lab | Intelligent Systems Lab</title>
+  <meta name="description" content="A ten-station robot learning facility at Sonoma State University: five WidowX AI arms, five ReactorX 150 arms, and ten RTX 5080 workstations running ROS 2 Jazzy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32.png">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/isl-mark.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .spec-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    .spec-table th, .spec-table td { text-align: left; padding: 0.6rem 0.9rem; border-bottom: 1px solid var(--color-border); }
+    .spec-table th { background: rgba(27,58,92,0.05); color: var(--color-primary); font-weight: 600; white-space: nowrap; }
+    .spec-table td:first-child { color: var(--color-text-muted); width: 38%; }
+    .spec-table td.mono, .spec-table th.mono { font-family: var(--font-mono); font-size: 0.8rem; }
+    .spec-wrap { overflow-x: auto; }
+
+    .kit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 1.6rem; }
+    .kit-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.6rem 1.7rem; box-shadow: var(--shadow-sm); }
+    .kit-card h3 { font-size: 1.05rem; margin-bottom: 0.15rem; }
+    .kit-count { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-accent-dark); margin-bottom: 1rem; display: block; }
+    .kit-card p { font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 1.1rem; }
+
+    .use-list { list-style: none; padding: 0; margin: 1.1rem 0 0; }
+    .use-list li { font-size: 0.85rem; padding-left: 1.1rem; position: relative; margin-bottom: 0.45rem; color: var(--color-text); }
+    .use-list li::before { content: "▸"; position: absolute; left: 0; color: var(--color-accent); }
+
+    .page-hero { padding-bottom: 3.4rem; }
+    .lead { font-size: 1.02rem; max-width: 70ch; margin-bottom: 1.1rem; }
+    .note-box { background: var(--color-surface); border-left: 3px solid var(--color-accent); border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 1.1rem 1.3rem; font-size: 0.88rem; color: var(--color-text-muted); margin-top: 2rem; }
+    .note-box strong { color: var(--color-text); }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo/isl-logo.svg" alt="Intelligent Systems Lab">
+    </a>
+    <ul class="nav-links">
+      <li><a href="research.html">Research</a></li>
+      <li><a href="people.html">People</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="index.html#footer">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile">
+    <a href="research.html">Research</a>
+    <a href="people.html">People</a>
+    <a href="publications.html">Publications</a>
+    <a href="join.html">Join</a>
+    <a href="index.html#footer">Contact</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <h1>SSU Robotics Lab</h1>
+    <p>A ten-station robot learning facility at Sonoma State University. Every station pairs a
+      manipulator with a GPU workstation, so a student can record demonstrations, train a policy,
+      and run it on the arm without leaving the bench.</p>
+    <div class="stats-grid" style="margin-top:2.8rem;">
+      <div class="stat-tile"><div class="stat-number">10</div><div class="stat-label">Robot stations</div></div>
+      <div class="stat-tile"><div class="stat-number">5</div><div class="stat-label">WidowX AI arms, 6-axis</div></div>
+      <div class="stat-tile"><div class="stat-number">5</div><div class="stat-label">ReactorX 150 arms, 5-axis</div></div>
+      <div class="stat-tile"><div class="stat-number">160 GB</div><div class="stat-label">Aggregate GPU memory</div></div>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>What the lab is for</h2>
+    </div>
+    <p class="lead">The lab exists to close the loop between learning and hardware. Policy work
+      that stops at simulation does not tell you whether a method survives contact, latency, and a
+      gripper that does not quite close where the model thought it would. Every station here is
+      configured so that the same machine collects the data, trains the model, and drives the
+      arm.</p>
+    <p class="lead">Two tiers of hardware serve two purposes. The ReactorX 150 arms are the
+      teaching platform: low payload, low consequence, and forgiving of the mistakes a student
+      makes while learning to assign frames. The WidowX AI arms are the research platform:
+      six degrees of freedom, a metre of reach, and the torque to do work that matters. A student
+      who learns kinematics on an RX150 in the fall is running imitation learning on a WidowX AI
+      by spring without changing laboratories.</p>
+  </div>
+</section>
+
+<section class="section" style="background:rgba(27,58,92,0.03);">
+  <div class="container">
+    <div class="section-header">
+      <h2>Hardware</h2>
+      <p>Everything listed is on site and operational.</p>
+    </div>
+
+    <div class="kit-grid">
+
+      <div class="kit-card">
+        <h3>Trossen WidowX AI</h3>
+        <span class="kit-count">Five arms · research platform</span>
+        <p>Six-axis research manipulator built for machine learning work, driven over Ethernet
+          from a Python API rather than through a motion controller.</p>
+        <div class="spec-wrap">
+        <table class="spec-table">
+          <tr><td>Degrees of freedom</td><td>6</td></tr>
+          <tr><td>Reach</td><td>700 mm, 1400 mm span</td></tr>
+          <tr><td>Payload</td><td>1.5 kg</td></tr>
+          <tr><td>Repeatability</td><td>1 mm</td></tr>
+          <tr><td>Joint torque</td><td>27 N·m base three, 7 N·m wrist three</td></tr>
+          <tr><td>Gripper</td><td>40 mm travel, 100 N grip force</td></tr>
+          <tr><td>Interface</td><td>Ethernet, 24 V</td></tr>
+        </table>
+        </div>
+        <ul class="use-list">
+          <li>Leader and follower teleoperation for demonstration capture</li>
+          <li>Imitation learning and vision-language-action policies</li>
+          <li>Bimanual coordination with two arms on one task</li>
+        </ul>
+      </div>
+
+      <div class="kit-card">
+        <h3>Interbotix ReactorX 150</h3>
+        <span class="kit-count">Five arms · teaching platform</span>
+        <p>Five-axis arm on DYNAMIXEL X-series smart servos, with the full Interbotix ROS 2 stack
+          and a URDF that matches the hardware.</p>
+        <div class="spec-wrap">
+        <table class="spec-table">
+          <tr><td>Degrees of freedom</td><td>5, with wrist rotate</td></tr>
+          <tr><td>Reach</td><td>450 mm, 900 mm span</td></tr>
+          <tr><td>Working payload</td><td>100 g</td></tr>
+          <tr><td>Repeatability</td><td>2.5 mm</td></tr>
+          <tr><td>Servos</td><td>6 total: XM430-W350 and XL430-W250</td></tr>
+          <tr><td>Interface</td><td>USB, ROS 2 control</td></tr>
+        </table>
+        </div>
+        <ul class="use-list">
+          <li>Forward and inverse kinematics against real hardware</li>
+          <li>Jacobian and velocity control</li>
+          <li>Reinforcement learning with recoverable failure modes</li>
+        </ul>
+      </div>
+
+      <div class="kit-card">
+        <h3>GPU workstations</h3>
+        <span class="kit-count">Ten machines · one per station</span>
+        <p>Identical builds from a single disk image, so a result that reproduces on one station
+          reproduces on all ten.</p>
+        <div class="spec-wrap">
+        <table class="spec-table">
+          <tr><td>GPU</td><td>NVIDIA RTX 5080, 16 GB, Blackwell</td></tr>
+          <tr><td>CPU</td><td>AMD Ryzen 9 9900X, 12 cores</td></tr>
+          <tr><td>Memory</td><td>32 GB DDR5-6000 CL30</td></tr>
+          <tr><td>Storage</td><td>1 TB PCIe Gen 5 NVMe</td></tr>
+          <tr><td>OS</td><td>Ubuntu 24.04 LTS</td></tr>
+          <tr><td>Networking</td><td>5 GbE, plus a dedicated arm link</td></tr>
+        </table>
+        </div>
+        <ul class="use-list">
+          <li>Local policy training without a cluster queue</li>
+          <li>Real-time inference on the arm at the same bench</li>
+          <li>Shared environment, so student code runs unmodified at any station</li>
+        </ul>
+      </div>
+
+      <div class="kit-card">
+        <h3>Depth and RGB sensing</h3>
+        <span class="kit-count">Per station</span>
+        <p>Two camera families, both reachable from Python and from ROS 2 without root, so
+          students can use them from an ordinary account.</p>
+        <div class="spec-wrap">
+        <table class="spec-table">
+          <tr><td>Intel RealSense D435</td><td>Stereo depth and RGB</td></tr>
+          <tr><td>Luxonis OAK-D W</td><td>Stereo depth with on-camera inference</td></tr>
+          <tr><td>Fiducials</td><td>AprilTag detection for frame registration</td></tr>
+          <tr><td>Point clouds</td><td>Open3D processing pipeline</td></tr>
+        </table>
+        </div>
+        <ul class="use-list">
+          <li>Hand-eye calibration and workspace registration</li>
+          <li>Demonstration capture for imitation learning</li>
+          <li>Closed-loop visual servoing</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Software</h2>
+      <p>A single shared environment on every machine, so nothing depends on which station a
+        student happened to sit at.</p>
+    </div>
+
+    <div class="spec-wrap">
+    <table class="spec-table">
+      <tr>
+        <th>Capability</th><th>Stack</th>
+      </tr>
+      <tr>
+        <td style="color:var(--color-text);font-weight:500;width:26%;">Robot middleware</td>
+        <td>ROS 2 Jazzy Jalisco, RViz, the Interbotix X-Series ROS 2 stack, and URDF models that
+          match the hardware</td>
+      </tr>
+      <tr>
+        <td style="color:var(--color-text);font-weight:500;">Arm control</td>
+        <td>Trossen Arm Python SDK for the WidowX AI, <span class="mono">interbotix_xs</span>
+          drivers for the RX150, joint and Cartesian control on both</td>
+      </tr>
+      <tr>
+        <td style="color:var(--color-text);font-weight:500;">Deep learning</td>
+        <td>PyTorch with CUDA on Blackwell, scikit-learn, and the full NumPy and SciPy stack</td>
+      </tr>
+      <tr>
+        <td style="color:var(--color-text);font-weight:500;">Kinematics</td>
+        <td><span class="mono">modern_robotics</span> for screw-theory and product-of-exponentials
+          work, alongside the analytic solvers in the vendor stacks</td>
+      </tr>
+      <tr>
+        <td style="color:var(--color-text);font-weight:500;">Simulation</td>
+        <td>MuJoCo for contact-rich policy training, Gazebo Harmonic for ROS 2 integration</td>
+      </tr>
+      <tr>
+        <td style="color:var(--color-text);font-weight:500;">Perception</td>
+        <td>OpenCV, Open3D, AprilTag detection, and the native RealSense and DepthAI Python
+          bindings</td>
+      </tr>
+      <tr>
+        <td style="color:var(--color-text);font-weight:500;">Photoreal simulation</td>
+        <td>NVIDIA Isaac Sim and Isaac Lab, for large-scale parallel environments and
+          sim-to-real transfer on the same GPUs that run the policies</td>
+      </tr>
+    </table>
+    </div>
+
+    <div class="note-box">
+      <strong>Why one shared environment.</strong> Every machine is built from one disk image and
+      runs one Python environment that every account shares. A student does not install anything,
+      a result that reproduces at one station reproduces at all ten, and the GPU libraries are
+      pinned once rather than negotiated thirty times.
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:rgba(27,58,92,0.03);">
+  <div class="container">
+    <div class="section-header">
+      <h2>Who uses it</h2>
+    </div>
+    <div class="kit-grid">
+      <div class="kit-card">
+        <h3>Courses</h3>
+        <span class="kit-count">Undergraduate and graduate</span>
+        <p>The lab is the teaching space for robotics at Sonoma State. Students work on the same
+          hardware the research runs on, not a scaled-down teaching version of it.</p>
+        <ul class="use-list">
+          <li><a href="teaching/robotics">EE 473/573, Robotics</a></li>
+        </ul>
+      </div>
+      <div class="kit-card">
+        <h3>Research</h3>
+        <span class="kit-count">Undergraduate-led</span>
+        <p>Projects are run by undergraduates with graduate students alongside them, which is
+          unusual and deliberate.</p>
+        <ul class="use-list">
+          <li>Imitation learning for bimanual coordination</li>
+          <li>Teleoperation and demonstration capture</li>
+          <li>Sim-to-real transfer</li>
+          <li>Vision-language-action systems</li>
+        </ul>
+      </div>
+      <div class="kit-card">
+        <h3>Industry and community</h3>
+        <span class="kit-count">North Bay</span>
+        <p>The lab is open to collaboration with companies and institutions in the region.
+          Capstone sponsorship, joint projects, and student internships are all routes in.</p>
+        <ul class="use-list">
+          <li><a href="join.html">Work with the lab</a></li>
+          <li><a href="donate">Support the lab</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="text-align:center;">
+    <h2 style="margin-bottom:0.8rem;">Visit the lab</h2>
+    <p style="color:var(--color-text-muted);max-width:60ch;margin:0 auto 1.8rem;">
+      Salazar 2002 and 2008, Sonoma State University, Rohnert Park. Tours and collaboration
+      enquiries are welcome.</p>
+    <div class="hero-ctas" style="justify-content:center;">
+      <a href="mailto:shrestsu@sonoma.edu" class="btn btn-primary">Contact the lab</a>
+      <a href="research.html" class="btn btn-teal">See the research</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="assets/logo/isl-logo.svg" alt="ISL">
+        </div>
+        <div class="footer-tagline">Engineering intelligent systems for the real world.</div>
+        <div class="footer-addr">
+          Salazar 2002 / 2008 · 1801 East Cotati Avenue · Rohnert Park, CA 94928<br>
+          shrestsu@sonoma.edu
+        </div>
+      </div>
+      <nav class="footer-nav">
+        <h4>Site</h4>
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="join.html">Join</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Intelligent Systems Lab, Sonoma State University</span>
+      <span>sonomaisl.ai</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
