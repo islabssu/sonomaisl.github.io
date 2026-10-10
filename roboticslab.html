@@ -88,12 +88,6 @@
       gripper that does not quite close where the model thought it would. Every station here is
       configured so that the same machine collects the data, trains the model, and drives the
       arm.</p>
-    <p class="lead">Two tiers of hardware serve two purposes. The ReactorX 150 arms are the
-      teaching platform: low payload, low consequence, and forgiving of the mistakes a student
-      makes while learning to assign frames. The WidowX AI arms are the research platform:
-      six degrees of freedom, a metre of reach, and the torque to do work that matters. A student
-      who learns kinematics on an RX150 in the fall is running imitation learning on a WidowX AI
-      by spring without changing laboratories.</p>
   </div>
 </section>
 
@@ -101,14 +95,13 @@
   <div class="container">
     <div class="section-header">
       <h2>Hardware</h2>
-      <p>Everything listed is on site and operational.</p>
     </div>
 
     <div class="kit-grid">
 
       <div class="kit-card">
         <h3>Trossen WidowX AI</h3>
-        <span class="kit-count">Five arms · research platform</span>
+        <span class="kit-count">Five arms</span>
         <p>Six-axis research manipulator built for machine learning work, driven over Ethernet
           from a Python API rather than through a motion controller.</p>
         <div class="spec-wrap">
@@ -122,16 +115,11 @@
           <tr><td>Interface</td><td>Ethernet, 24 V</td></tr>
         </table>
         </div>
-        <ul class="use-list">
-          <li>Leader and follower teleoperation for demonstration capture</li>
-          <li>Imitation learning and vision-language-action policies</li>
-          <li>Bimanual coordination with two arms on one task</li>
-        </ul>
       </div>
 
       <div class="kit-card">
         <h3>Interbotix ReactorX 150</h3>
-        <span class="kit-count">Five arms · teaching platform</span>
+        <span class="kit-count">Five arms</span>
         <p>Five-axis arm on DYNAMIXEL X-series smart servos, with the full Interbotix ROS 2 stack
           and a URDF that matches the hardware.</p>
         <div class="spec-wrap">
@@ -153,9 +141,7 @@
 
       <div class="kit-card">
         <h3>GPU workstations</h3>
-        <span class="kit-count">Ten machines · one per station</span>
-        <p>Identical builds from a single disk image, so a result that reproduces on one station
-          reproduces on all ten.</p>
+        <span class="kit-count">Ten machines</span>
         <div class="spec-wrap">
         <table class="spec-table">
           <tr><td>GPU</td><td>NVIDIA RTX 5080, 16 GB, Blackwell</td></tr>
@@ -166,18 +152,11 @@
           <tr><td>Networking</td><td>5 GbE, plus a dedicated arm link</td></tr>
         </table>
         </div>
-        <ul class="use-list">
-          <li>Local policy training without a cluster queue</li>
-          <li>Real-time inference on the arm at the same bench</li>
-          <li>Shared environment, so student code runs unmodified at any station</li>
-        </ul>
       </div>
 
       <div class="kit-card">
         <h3>Depth and RGB sensing</h3>
         <span class="kit-count">Per station</span>
-        <p>Two camera families, both reachable from Python and from ROS 2 without root, so
-          students can use them from an ordinary account.</p>
         <div class="spec-wrap">
         <table class="spec-table">
           <tr><td>Intel RealSense D435</td><td>Stereo depth and RGB</td></tr>
@@ -186,11 +165,6 @@
           <tr><td>Point clouds</td><td>Open3D processing pipeline</td></tr>
         </table>
         </div>
-        <ul class="use-list">
-          <li>Hand-eye calibration and workspace registration</li>
-          <li>Demonstration capture for imitation learning</li>
-          <li>Closed-loop visual servoing</li>
-        </ul>
       </div>
 
     </div>
@@ -201,8 +175,6 @@
   <div class="container">
     <div class="section-header">
       <h2>Software</h2>
-      <p>A single shared environment on every machine, so nothing depends on which station a
-        student happened to sit at.</p>
     </div>
 
     <div class="spec-wrap">
@@ -246,12 +218,6 @@
     </table>
     </div>
 
-    <div class="note-box">
-      <strong>Why one shared environment.</strong> Every machine is built from one disk image and
-      runs one Python environment that every account shares. A student does not install anything,
-      a result that reproduces at one station reproduces at all ten, and the GPU libraries are
-      pinned once rather than negotiated thirty times.
-    </div>
   </div>
 </section>
 
@@ -263,7 +229,6 @@
     <div class="kit-grid">
       <div class="kit-card">
         <h3>Courses</h3>
-        <span class="kit-count">Undergraduate and graduate</span>
         <p>The lab is the teaching space for robotics at Sonoma State. Students work on the same
           hardware the research runs on, not a scaled-down teaching version of it.</p>
         <ul class="use-list">
@@ -272,9 +237,7 @@
       </div>
       <div class="kit-card">
         <h3>Research</h3>
-        <span class="kit-count">Undergraduate-led</span>
-        <p>Projects are run by undergraduates with graduate students alongside them, which is
-          unusual and deliberate.</p>
+        <p>Projects are run by undergraduates and graduate students.</p>
         <ul class="use-list">
           <li>Imitation learning for bimanual coordination</li>
           <li>Teleoperation and demonstration capture</li>
@@ -284,9 +247,8 @@
       </div>
       <div class="kit-card">
         <h3>Industry and community</h3>
-        <span class="kit-count">North Bay</span>
-        <p>The lab is open to collaboration with companies and institutions in the region.
-          Capstone sponsorship, joint projects, and student internships are all routes in.</p>
+        <p>The lab is open to collaboration with companies and institutions in the region, and to
+          faculty, students, and departments across Sonoma State.</p>
         <ul class="use-list">
           <li><a href="join.html">Work with the lab</a></li>
           <li><a href="donate">Support the lab</a></li>
@@ -300,7 +262,7 @@
   <div class="container" style="text-align:center;">
     <h2 style="margin-bottom:0.8rem;">Visit the lab</h2>
     <p style="color:var(--color-text-muted);max-width:60ch;margin:0 auto 1.8rem;">
-      Salazar 2002 and 2008, Sonoma State University, Rohnert Park. Tours and collaboration
+      Salazar 2008, Sonoma State University, Rohnert Park. Tours and collaboration
       enquiries are welcome.</p>
     <div class="hero-ctas" style="justify-content:center;">
       <a href="mailto:shrestsu@sonoma.edu" class="btn btn-primary">Contact the lab</a>
