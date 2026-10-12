@@ -93,11 +93,25 @@
     <div class="section-header">
       <h2>Purpose</h2>
     </div>
-    <p class="lead">The purpose of the lab is to close the loop between learning and hardware. Policy work
-      that stops at simulation does not tell you whether a method survives contact, latency, and a
-      gripper that does not quite close where the model thought it would. Each station here is
-      configured so that the same machine collects the data, trains the model, and drives the
-      arm.</p>
+    <p class="lead">The purpose of the lab is to close the loop between learning and hardware. A method
+      that has only ever run in simulation has not yet met the part that is difficult.</p>
+
+    <p class="lead">On a real arm, the driver has to match the firmware on the controller before the two
+      will speak at all. The adapter has to enumerate as the right device, or nothing downstream works
+      and the error it reports points somewhere else entirely. The arm is clamped before it is powered
+      and supported before the motors are released, because an arm with its torque off falls. Command a
+      joint angle and the servo settles a little short of it under its own weight. Measure where the
+      gripper actually ended up and it disagrees with the model, usually because the derivation and the
+      ruler are pointing at two different frames. Move the target a few millimeters and the solver
+      returns nothing, because that point is outside the workspace. None of this appears in a
+      simulator, and all of it has to be resolved before a result means anything.</p>
+
+    <p class="lead">Working through that is the education, and it is why the lab is in person. Students
+      run the whole stack themselves on their own station: ROS 2 and the vendor driver, their own
+      kinematics rather than a library call, a policy trained on the same GPU that then drives the
+      motion. The machine that collects the data trains the model and commands the arm, so nothing is
+      handed across a boundary and taken on trust. When the arm does what the model predicted, the
+      student knows every reason why.</p>
 
     <div class="lab-gallery" style="margin-top:2.8rem;">
       <figure class="wide">
