@@ -34,6 +34,17 @@
     .lead { font-size: 1.02rem; max-width: 70ch; margin-bottom: 1.1rem; }
     .note-box { background: var(--color-surface); border-left: 3px solid var(--color-accent); border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 1.1rem 1.3rem; font-size: 0.88rem; color: var(--color-text-muted); margin-top: 2rem; }
     .note-box strong { color: var(--color-text); }
+
+    .lab-gallery { display: grid; gap: 1.3rem; }
+    .lab-gallery figure { margin: 0; background: var(--color-surface); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); }
+    .lab-gallery img { display: block; width: 100%; object-fit: cover; }
+    .lab-gallery figure.wide img { aspect-ratio: 16 / 9; }
+    .lab-gallery figure.half img { aspect-ratio: 3 / 2; }
+    .lab-gallery figcaption { padding: 0.85rem 1.15rem; font-size: 0.83rem; line-height: 1.5; color: var(--color-text-muted); }
+    .lab-gallery figcaption strong { color: var(--color-text); font-weight: 600; }
+    .lab-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1.3rem; }
+    @media (max-width: 720px) { .lab-pair { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -87,6 +98,31 @@
       gripper that does not quite close where the model thought it would. Each station here is
       configured so that the same machine collects the data, trains the model, and drives the
       arm.</p>
+
+    <div class="lab-gallery" style="margin-top:2.8rem;">
+      <figure class="wide">
+        <img src="assets/images/lab/lab-wide.jpg" loading="lazy"
+             alt="The robotics lab in Salazar 2008: rows of benches, each with a workstation, monitor and a Trossen manipulator mounted to the bench.">
+        <figcaption><strong>Salazar 2008.</strong> Ten stations, each pairing a manipulator with its own
+          GPU workstation. Arms are bolted to the bench rather than shared on a cart, so a station is
+          ready to record and run without being set up first.</figcaption>
+      </figure>
+
+      <div class="lab-pair">
+        <figure class="half">
+          <img src="assets/images/lab/widowx-row.jpg" loading="lazy"
+               alt="Close view of two WidowX AI arms in their folded rest pose, grippers forward, mounted along a lab bench.">
+          <figcaption><strong>WidowX AI.</strong> Six axes, 700 mm reach, 1.5 kg payload and 1 mm
+            repeatability, at rest in the sleep pose the arms are left in between sessions.</figcaption>
+        </figure>
+        <figure class="half">
+          <img src="assets/images/lab/widowx-pair.jpg" loading="lazy"
+               alt="Overhead view of two bench-mounted WidowX AI arms beside their numbered power and network outlets.">
+          <figcaption><strong>One arm per station.</strong> Power and a dedicated Ethernet link come up
+            through the bench at each position, numbered to match the station.</figcaption>
+        </figure>
+      </div>
+    </div>
   </div>
 </section>
 
