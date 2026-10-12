@@ -121,10 +121,23 @@ async function renderPublications() {
       </div>`;
   }
 
+  // Papers first, patents last. Entries marked "featured" in publications.json lead the
+  // list regardless of type, so the robotics work sits at the top of the page.
+  const tagged = [
+    ...(pubs.journal || []).map(p => ({ p, type: 'journal' })),
+    ...(pubs.conference || []).map(p => ({ p, type: 'conference' })),
+  ];
+  const jc = [
+    ...tagged.filter(x => x.p.featured),
+    ...tagged.filter(x => !x.p.featured),
+  ].map(x => pubHTML(x.p, x.type));
+
   let html = '';
-  if (pubs.patent?.length) html += `<div class="pub-group"><h2 class="pub-group-title">Patent</h2>${pubs.patent.map(p => pubHTML(p,'patent')).join('')}</div>`;
-  const jc = [...(pubs.journal||[]).map(p => pubHTML(p,'journal')), ...(pubs.conference||[]).map(p => pubHTML(p,'conference'))];
   if (jc.length) html += `<div class="pub-group"><h2 class="pub-group-title">Journal and Conference Papers</h2>${jc.join('')}</div>`;
+  if (pubs.patent?.length) {
+    const title = pubs.patent.length > 1 ? 'Patents' : 'Patent';
+    html += `<div class="pub-group"><h2 class="pub-group-title">${title}</h2>${pubs.patent.map(p => pubHTML(p,'patent')).join('')}</div>`;
+  }
   el.innerHTML = html;
 
   el.querySelectorAll('.pub-toggle').forEach(btn => {
