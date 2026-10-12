@@ -31,7 +31,12 @@
     .use-list li::before { content: "▸"; position: absolute; left: 0; color: var(--color-accent); }
 
     .page-hero { padding-bottom: 3.4rem; }
-    .lead { font-size: 1.02rem; max-width: 70ch; margin-bottom: 1.1rem; }
+    .page-hero p { max-width: 46rem; }
+    /* One measure for the whole block, set in rem rather than ch, so paragraphs at
+       different sizes still share a left edge. Centered under the centered heading. */
+    .purpose-copy { max-width: 47rem; margin: 0 auto; }
+    .lead { font-size: 1.02rem; margin-bottom: 1.15rem; }
+    .lead.lead-open { font-size: 1.2rem; line-height: 1.55; font-weight: 500; color: var(--color-text); margin-bottom: 1.5rem; }
     .note-box { background: var(--color-surface); border-left: 3px solid var(--color-accent); border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 1.1rem 1.3rem; font-size: 0.88rem; color: var(--color-text-muted); margin-top: 2rem; }
     .note-box strong { color: var(--color-text); }
 
@@ -93,16 +98,18 @@
     <div class="section-header">
       <h2>Purpose</h2>
     </div>
-    <p class="lead">Robotics is where ideas must prove themselves in the physical world.</p>
+    <div class="purpose-copy">
+      <p class="lead lead-open">Robotics is where ideas must prove themselves in the physical world.</p>
 
-    <p class="lead">An elegant algorithm or convincing simulation is only the beginning. True physical
-      intelligence must contend with contact, uncertainty, latency, and hardware tolerances that no
-      model fully anticipates.</p>
+      <p class="lead">An elegant algorithm or convincing simulation is only the beginning. True physical
+        intelligence must contend with contact, uncertainty, latency, and hardware tolerances that no
+        model fully anticipates.</p>
 
-    <p class="lead">In our laboratory, students work directly on hardware, turning theory into capability
-      through hands-on experimentation, rigorous iteration, and creative problem-solving. This is where
-      simulation becomes reality, and where the next generation of roboticists builds the judgment,
-      rigor, and ingenuity to bring complex autonomous systems to life.</p>
+      <p class="lead">In our laboratory, students work directly on hardware, turning theory into
+        capability through hands-on experimentation, rigorous iteration, and creative problem-solving.
+        This is where simulation becomes reality, and where the next generation of roboticists builds
+        the judgment, rigor, and ingenuity to bring complex autonomous systems to life.</p>
+    </div>
 
     <div class="lab-gallery" style="margin-top:2.8rem;">
       <figure class="wide">
