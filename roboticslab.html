@@ -49,7 +49,10 @@
     .lab-gallery figcaption { padding: 0.85rem 1.15rem; font-size: 0.83rem; line-height: 1.5; color: var(--color-text-muted); }
     .lab-gallery figcaption strong { color: var(--color-text); font-weight: 600; }
     .lab-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1.3rem; }
-    @media (max-width: 720px) { .lab-pair { grid-template-columns: 1fr; } }
+    /* 1 : 2.2 with a 4:5 portrait beside a 16:9 frame makes the two the same height. */
+    .lab-split { display: grid; grid-template-columns: 1fr 2.2fr; gap: 1.3rem; align-items: start; }
+    .lab-gallery figure.tall img { aspect-ratio: 4 / 5; }
+    @media (max-width: 720px) { .lab-pair, .lab-split { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -130,6 +133,20 @@
           <img src="assets/images/lab/widowx-pair.jpg" loading="lazy"
                alt="Overhead view of two bench-mounted WidowX AI arms beside their numbered power and network outlets.">
           <figcaption><strong>WidowX AI, top view.</strong></figcaption>
+        </figure>
+      </div>
+
+      <div class="lab-split">
+        <figure class="tall">
+          <img src="assets/images/lab/station-in-use.jpg" loading="lazy"
+               alt="A student seated at a lab station, with a ReactorX 150 arm, keyboard and monitor within reach on the bench.">
+          <figcaption><strong>One station.</strong> The arm, the workstation and the screen all
+            within reach of the seat.</figcaption>
+        </figure>
+        <figure class="wide">
+          <img src="assets/images/lab/lab-in-session.jpg" loading="lazy"
+               alt="Several people working at stations along the benches in the robotics lab.">
+          <figcaption><strong>In session.</strong> Salazar 2008 during a working session.</figcaption>
         </figure>
       </div>
     </div>
