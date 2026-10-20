@@ -6,7 +6,13 @@
     "university": "Sonoma State University",
     "email": "shrestsu@sonoma.edu",
     "website": "https://sudhirshrestha.com",
-    "bio": "Dr. Shrestha is a tenured professor in Engineering and Computer Science department at Sonoma State University. He founded the ISL in 2017 and has directed it since. His research spans biomedical sensing, intelligent robotics, and embedded AI systems. He holds seven U.S. patents and has authored more than 35 peer-reviewed publications. He earned his Ph.D. from Louisiana Tech University and completed postdoctoral training at Purdue University in Indianapolis. He is a Senior Member of IEEE and has been recognized with NSF Smart and Connected Health and CSU Biotech Faculty Research grants.",
+    "bio": [
+      "Dr. Shrestha builds intelligent systems for the real world, with a focus on robots that learn new skills from human demonstration and simulation.",
+      "He is a Professor in the Department of Engineering and Computer Science at Sonoma State University, where he founded the Intelligent Systems Lab in 2017 and serves as its director. His research centers on robot learning and manipulation, including sim-to-real transfer, imitation learning, and vision-language-action models, with related work in intelligent sensing and embedded AI.",
+      "He created SSU's robotics and computer vision curriculum and developed the Engineering Robotics and AI Lab, which opened in Fall 2026. Through ISL, he has mentored more than 100 students.",
+      "He holds seven U.S. patents, has authored more than 35 peer-reviewed publications, and is an IEEE Senior Member. His work has been funded by NSF and CSU grants. He earned his Ph.D. at Louisiana Tech University, then completed postdoctoral training and served on the research faculty at Purdue University in Indianapolis before joining SSU.",
+      "Students, researchers, and industry partners interested in collaborations are welcome to get in touch."
+    ],
     "photo": null
   },
   "current_students": [

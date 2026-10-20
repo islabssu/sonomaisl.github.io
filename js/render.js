@@ -162,7 +162,11 @@ async function renderPeople() {
       <div class="director-info">
         <h3>${d.name}</h3>
         <div class="title">${d.title}</div>
-        <p>${d.bio}</p>
+        ${(() => {
+          const paras = Array.isArray(d.bio) ? d.bio : [d.bio];
+          const lim = dirEl.dataset.bioLimit ? parseInt(dirEl.dataset.bioLimit) : Infinity;
+          return paras.slice(0, lim).map(p => `<p>${p}</p>`).join('');
+        })()}
         <div class="director-links">
           <a href="${d.website}" target="_blank" rel="noopener">Visit personal website →</a>
           <span class="director-sep">&middot;</span>
