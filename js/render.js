@@ -199,7 +199,7 @@ async function renderPeople() {
           <tr>
             <td>${a.name}</td>
             <td>${a.degree}</td>
-            <td>${a.year ?? '—'}</td>
+            <td>${a.year ?? '–'}</td>
             <td>${a.project}</td>
           </tr>`).join('')}
         </tbody>
