@@ -109,7 +109,7 @@
     "years": "2017–2019",
     "featured": false,
     "page": "research/gesture-robot-arm.html",
-    "description": "Built a sensor-equipped glove that translated hand gestures into robot arm commands, enabling intuitive physical human-robot interaction.",
+    "description": "An IMU-equipped glove teleoperation of a 5-DOF robot manipulator enabling intuitive physical human-robot interaction.",
     "students": [],
     "image": null,
     "video": "assets/videos/gesture-robot-arm-demo.mp4",
