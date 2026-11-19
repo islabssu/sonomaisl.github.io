@@ -103,7 +103,7 @@
   },
   {
     "id": "gesture-robot-arm",
-    "title": "Gesture-Controlled Robotic Arm",
+    "title": "Teleoperation",
     "area": "robotics",
     "status": "completed",
     "years": "2017–2019",
